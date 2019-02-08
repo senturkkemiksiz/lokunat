@@ -1,0 +1,33 @@
+.nav-head {
+	height: $menuHeight;
+
+	&__logo {
+		height: 100%;
+		width: auto;
+		float: left;
+		padding-left: 35px;
+	}
+
+	&__menu li {
+		height: 100%;
+		width: auto;
+		float: left;
+		padding-left: 35px;
+		//background-color: green;
+		ul {
+			display: none;
+		}
+	}
+
+	&__social-links li {
+		height: 100%;
+		width: auto;
+		float: right;
+	}
+
+	&__shopping-links li {
+		height: 100%;
+		width: auto;
+		float: right;
+	}
+}
