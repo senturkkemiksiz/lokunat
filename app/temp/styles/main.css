@@ -414,71 +414,196 @@ ul {
 
 }
 
-.intro__image-wrap {
-		position: absolute;
-		width: 100%;
-		height: 100%;	
-	}
-
 .intro__image {
+		position: absolute;
 		display: block;
-		margin-left: auto;
-		margin-right: auto;
+		left: 50%;
 	}
 
-.intro__image--nuts-explosion {
-			height: 90%;	
-			-webkit-transform: translate(0, 4%) scale(1);	
-			        transform: translate(0, 4%) scale(1);
+.intro__image--nut-pieces-explosion {
+			height: 85%;	
+			-webkit-transform: translate(-50%, 4%) scale(0);	
+			        transform: translate(-50%, 4%) scale(0);
+			-webkit-animation-name: nut-pieces-explosion;
+			        animation-name: nut-pieces-explosion;
+			-webkit-animation-duration: 0.4s;
+			        animation-duration: 0.4s;
+			-webkit-animation-delay: 0.87s;
+			        animation-delay: 0.87s;
+			-webkit-animation-iteration-count: 1;
+			        animation-iteration-count: 1;
+		}
+
+.intro__image--nut-pieces-float {
+			height: 85%;	
+			-webkit-transform: translate(-50%, 4%) scale(0);	
+			        transform: translate(-50%, 4%) scale(0);
+			-webkit-animation-name: nut-pieces-float;
+			        animation-name: nut-pieces-float;
+			-webkit-animation-duration: 8s;
+			        animation-duration: 8s;
+			-webkit-animation-delay: 1.27s;
+			        animation-delay: 1.27s;
+			-webkit-animation-iteration-count: infinite;
+			        animation-iteration-count: infinite;
 		}
 
 .intro__image--hand-holding-pack {
-			height: 94%;
-			-webkit-transform: translate(1%, 16%) scale(1);
-			        transform: translate(1%, 16%) scale(1);
+			height: 89%;
+			-webkit-transform: translate(-48%, 16%) scale(1);
+			        transform: translate(-48%, 16%) scale(1);
+			-webkit-animation-name: hand-shake;
+			        animation-name: hand-shake;
+			-webkit-animation-duration: 1.3s;
+			        animation-duration: 1.3s;
+			//animation-timing-function: linear;
+			-webkit-animation-iteration-count: 1;
+			        animation-iteration-count: 1;
 		}
 
 .intro__image--non-gmo {
-			height: 15%;
-			-webkit-transform: translate(-185%, 45%) scale(1);
-			        transform: translate(-185%, 45%) scale(1);
+			height: 14%;
+			-webkit-transform: translate(-230%, 45%) scale(1);
+			        transform: translate(-230%, 45%) scale(1);
+			-webkit-animation-name: non-gmo-explosion;
+			        animation-name: non-gmo-explosion;
+			-webkit-animation-duration: 1.27s;
+			        animation-duration: 1.27s;
+			-webkit-animation-iteration-count: 1;
+			        animation-iteration-count: 1;
 		}
 
 .intro__image--popular {
-			height: 18%;
-			-webkit-transform: translate(-175%, 330%) scale(1);
-			        transform: translate(-175%, 330%) scale(1);
+			height: 17%;
+			-webkit-transform: translate(-225%, 330%) scale(1);
+			        transform: translate(-225%, 330%) scale(1);
+			-webkit-animation-name: popular-explosion;
+			        animation-name: popular-explosion;
+			-webkit-animation-duration: 1.28s;
+			        animation-duration: 1.28s;
+			-webkit-animation-iteration-count: 1;
+			        animation-iteration-count: 1;
 		}
 
 .intro__image--delight {
-			height: 30%;
-			-webkit-transform: translate(56%, 62%) scale(1);
-			        transform: translate(56%, 62%) scale(1);
+			height: 28%;
+			-webkit-transform: translate(7%, 63%) scale(1);
+			        transform: translate(7%, 63%) scale(1);
+			-webkit-animation-name: delight-explosion;
+			        animation-name: delight-explosion;
+			-webkit-animation-duration: 1.30s;
+			        animation-duration: 1.30s;
+			-webkit-animation-iteration-count: 1;
+			        animation-iteration-count: 1;
 		}
 
 .intro__image--vegan {
-			height: 12%;
-			-webkit-transform: translate(290%, 350%) scale(1);
-			        transform: translate(290%, 350%) scale(1);
+			height: 11%;
+			-webkit-transform: translate(240%, 355%) scale(1);
+			        transform: translate(240%, 355%) scale(1);
+			-webkit-animation-name: vegan-explosion;
+			        animation-name: vegan-explosion;
+			-webkit-animation-duration: 1.27s;
+			        animation-duration: 1.27s;
+			-webkit-animation-iteration-count: 1;
+			        animation-iteration-count: 1;
 		}
 
 .intro__image--gluten-free {
-			height: 19%;
-			-webkit-transform: translate(-160%, 100%) scale(1);
-			        transform: translate(-160%, 100%) scale(1);
-		}
-
-.intro__image--non-gmo {
-			height: 15%;
-			-webkit-transform: translate(-185%, 45%) scale(1);
-			        transform: translate(-185%, 45%) scale(1);
+			height: 18%;
+			-webkit-transform: translate(-208%, 95%) scale(1);
+			        transform: translate(-208%, 95%) scale(1);
+			-webkit-animation-name: gluten-free-explosion;
+			        animation-name: gluten-free-explosion;
+			-webkit-animation-duration: 1.32s;
+			        animation-duration: 1.32s;
+			-webkit-animation-iteration-count: 1;
+			        animation-iteration-count: 1;
 		}
 
 .intro__image--healthy {
 			height: 18%;
-			-webkit-transform: translate(150%, 280%) scale(1);
-			        transform: translate(150%, 280%) scale(1);
+			-webkit-transform: translate(100%, 265%) scale(1);
+			        transform: translate(100%, 265%) scale(1);
+			-webkit-animation-name: healthy-explosion;
+			        animation-name: healthy-explosion;
+			-webkit-animation-duration: 1.30s;
+			        animation-duration: 1.30s;
+			-webkit-animation-iteration-count: 1;
+			        animation-iteration-count: 1;
 		}
+
+@-webkit-keyframes nut-pieces-float {
+	0%   {-webkit-transform: translate(-50%, 4%) scale(1);transform: translate(-50%, 4%) scale(1);}
+	50%  {-webkit-transform: translate(-50%, 8%) scale(1);transform: translate(-50%, 8%) scale(1);}
+	100% {-webkit-transform: translate(-50%, 4%) scale(1);transform: translate(-50%, 4%) scale(1);}
+}
+
+@-webkit-keyframes nut-pieces-explosion {
+	0%   {-webkit-transform: translate(-50%, 4%) scale(0);transform: translate(-50%, 4%) scale(0);}
+	99% {-webkit-transform: translate(-50%, 4%) scale(1.03);transform: translate(-50%, 4%) scale(1.03);}
+	100% {-webkit-transform: translate(-50%, 4%) scale(1);transform: translate(-50%, 4%) scale(1);}
+}
+
+/* Standard syntax */
+
+@-webkit-keyframes hand-shake {
+	0%   {-webkit-transform: translate(-48%, 100%);transform: translate(-48%, 100%);}
+	67%  {-webkit-transform: translate(-48%, 16%);transform: translate(-48%, 16%);}
+	78%  {-webkit-transform: translate(-48%, 16%) rotate(2.5deg);transform: translate(-48%, 16%) rotate(2.5deg); -webkit-transform-origin: 0% 150%; transform-origin: 0% 150%;}
+	89%  {-webkit-transform: translate(-48%, 16%) rotate(-3.5deg);transform: translate(-48%, 16%) rotate(-3.5deg); -webkit-transform-origin: 100% 150%; transform-origin: 100% 150%;}
+	100% {-webkit-transform: translate(-48%, 16%) rotate(0deg);transform: translate(-48%, 16%) rotate(0deg); -webkit-transform-origin: 100% 150%; transform-origin: 100% 150%;}
+}
+
+@keyframes hand-shake {
+	0%   {-webkit-transform: translate(-48%, 100%);transform: translate(-48%, 100%);}
+	67%  {-webkit-transform: translate(-48%, 16%);transform: translate(-48%, 16%);}
+	78%  {-webkit-transform: translate(-48%, 16%) rotate(2.5deg);transform: translate(-48%, 16%) rotate(2.5deg); -webkit-transform-origin: 0% 150%; transform-origin: 0% 150%;}
+	89%  {-webkit-transform: translate(-48%, 16%) rotate(-3.5deg);transform: translate(-48%, 16%) rotate(-3.5deg); -webkit-transform-origin: 100% 150%; transform-origin: 100% 150%;}
+	100% {-webkit-transform: translate(-48%, 16%) rotate(0deg);transform: translate(-48%, 16%) rotate(0deg); -webkit-transform-origin: 100% 150%; transform-origin: 100% 150%;}
+}
+
+@-webkit-keyframes non-gmo-explosion {
+	0%   {-webkit-transform: translate(-230%, 45%) scale(0);transform: translate(-230%, 45%) scale(0);}
+	69%   {-webkit-transform: translate(-230%, 45%) scale(0);transform: translate(-230%, 45%) scale(0);}
+	98% {-webkit-transform: translate(-230%, 45%) scale(1.09);transform: translate(-230%, 45%) scale(1.09);}
+	100% {-webkit-transform: translate(-230%, 45%) scale(1);transform: translate(-230%, 45%) scale(1);}
+}
+
+@-webkit-keyframes popular-explosion {
+	0%   {-webkit-transform: translate(-225%, 330%) scale(0);transform: translate(-225%, 330%) scale(0);}
+	69%   {-webkit-transform: translate(-225%, 330%) scale(0);transform: translate(-225%, 330%) scale(0);}
+	98% {-webkit-transform: translate(-225%, 330%) scale(1.09);transform: translate(-225%, 330%) scale(1.09);}
+	100% {-webkit-transform: translate(-225%, 330%) scale(1);transform: translate(-225%, 330%) scale(1);}
+}
+
+@-webkit-keyframes delight-explosion {
+	0%   {-webkit-transform: translate(7%, 63%) scale(0);transform: translate(7%, 63%) scale(0);}
+	69%   {-webkit-transform: translate(7%, 63%) scale(0);transform: translate(7%, 63%) scale(0);}
+	98% {-webkit-transform: translate(7%, 63%) scale(1.09);transform: translate(7%, 63%) scale(1.09);}
+	100% {-webkit-transform: translate(7%, 63%) scale(1);transform: translate(7%, 63%) scale(1);}
+}
+
+@-webkit-keyframes vegan-explosion {
+	0%   {-webkit-transform: translate(240%, 355%) scale(0);transform: translate(240%, 355%) scale(0);}
+	69%   {-webkit-transform: translate(240%, 355%) scale(0);transform: translate(240%, 355%) scale(0);}
+	98% {-webkit-transform: translate(240%, 355%) scale(1.09);transform: translate(240%, 355%) scale(1.09);}
+	100% {-webkit-transform: translate(240%, 355%) scale(1);transform: translate(240%, 355%) scale(1);}
+}
+
+@-webkit-keyframes gluten-free-explosion {
+	0%   {-webkit-transform: translate(-208%, 95%) scale(0);transform: translate(-208%, 95%) scale(0);}
+	69%   {-webkit-transform: translate(-208%, 95%) scale(0);transform: translate(-208%, 95%) scale(0);}
+	98% {-webkit-transform: translate(-208%, 95%) scale(1.09);transform: translate(-208%, 95%) scale(1.09);}
+	100% {-webkit-transform: translate(-208%, 95%) scale(1);transform: translate(-208%, 95%) scale(1);}
+}
+
+@-webkit-keyframes healthy-explosion {
+	0%   {-webkit-transform: translate(100%, 265%) scale(0);transform: translate(100%, 265%) scale(0);}
+	69%   {-webkit-transform: translate(100%, 265%) scale(0);transform: translate(100%, 265%) scale(0);}
+	98% {-webkit-transform: translate(100%, 265%) scale(1.09);transform: translate(100%, 265%) scale(1.09);}
+	100% {-webkit-transform: translate(100%, 265%) scale(1);transform: translate(100%, 265%) scale(1);}
+}
 
 .wrapper {
 	
