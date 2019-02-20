@@ -80,18 +80,18 @@
 
 }
 
-@-webkit-keyframes nut-pieces-float {
+@keyframes nut-pieces-float {
 	0%   {transform: translate(-50%, 4%) scale(1);}
 	50%  {transform: translate(-50%, 8%) scale(1);}
 	100% {transform: translate(-50%, 4%) scale(1);}
 }
-@-webkit-keyframes nut-pieces-explosion {
+@keyframes nut-pieces-explosion {
 	0%   {transform: translate(-50%, 4%) scale(0);}
 	99% {transform: translate(-50%, 4%) scale(1.03);}
 	100% {transform: translate(-50%, 4%) scale(1);}
 }
 
-/* Standard syntax */
+
 @keyframes hand-shake {
 	0%   {transform: translate(-48%, 100%);}
 	67%  {transform: translate(-48%, 16%);}
@@ -100,37 +100,37 @@
 	100% {transform: translate(-48%, 16%) rotate(0deg); transform-origin: 100% 150%;}
 }
 
-@-webkit-keyframes non-gmo-explosion {
+@keyframes non-gmo-explosion {
 	0%   {transform: translate(-230%, 45%) scale(0);}
 	69%   {transform: translate(-230%, 45%) scale(0);}
 	98% {transform: translate(-230%, 45%) scale(1.09);}
 	100% {transform: translate(-230%, 45%) scale(1);}
 }
-@-webkit-keyframes popular-explosion {
+@keyframes popular-explosion {
 	0%   {transform: translate(-225%, 330%) scale(0);}
 	69%   {transform: translate(-225%, 330%) scale(0);}
 	98% {transform: translate(-225%, 330%) scale(1.09);}
 	100% {transform: translate(-225%, 330%) scale(1);}
 }
-@-webkit-keyframes delight-explosion {
+@keyframes delight-explosion {
 	0%   {transform: translate(7%, 63%) scale(0);}
 	69%   {transform: translate(7%, 63%) scale(0);}
 	98% {transform: translate(7%, 63%) scale(1.09);}
 	100% {transform: translate(7%, 63%) scale(1);}
 }
-@-webkit-keyframes vegan-explosion {
+@keyframes vegan-explosion {
 	0%   {transform: translate(240%, 355%) scale(0);}
 	69%   {transform: translate(240%, 355%) scale(0);}
 	98% {transform: translate(240%, 355%) scale(1.09);}
 	100% {transform: translate(240%, 355%) scale(1);}
 }
-@-webkit-keyframes gluten-free-explosion {
+@keyframes gluten-free-explosion {
 	0%   {transform: translate(-208%, 95%) scale(0);}
 	69%   {transform: translate(-208%, 95%) scale(0);}
 	98% {transform: translate(-208%, 95%) scale(1.09);}
 	100% {transform: translate(-208%, 95%) scale(1);}
 }
-@-webkit-keyframes healthy-explosion {
+@keyframes healthy-explosion {
 	0%   {transform: translate(100%, 265%) scale(0);}
 	69%   {transform: translate(100%, 265%) scale(0);}
 	98% {transform: translate(100%, 265%) scale(1.09);}
