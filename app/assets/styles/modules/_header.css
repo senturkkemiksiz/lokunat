@@ -1,8 +1,8 @@
 .header {
+	font-family: 'Caveat Brush', cursive;
 	height: 100vh;
-	background-color: $mainColor;
+	max-height: 100vw;
+	background-color: $baseColor;
 	display: flex;
   	flex-direction: column;
-  	
-
-}
+  }

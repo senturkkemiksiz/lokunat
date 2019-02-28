@@ -359,56 +359,107 @@ body {
 
 ul {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .header {
+	font-family: 'Caveat Brush', cursive;
 	height: 100vh;
+	max-height: 100vw;
 	background-color: #ecd1b4;
 	display: flex;
   	flex-direction: column;
-  	
-
-}
+  }
 
 .nav-head {
-	height: 76px;
+	//background-color: gray;
+	height: 87px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+
 }
 
-.nav-head__logo {
-		height: 100%;
-		width: auto;
-		float: left;
-		padding-left: 35px;
+.nav-head a {
+		text-decoration: none;
+  	}
+
+.nav-head img {
+  		display: block;
+  	}
+
+.nav-head__logo {	
+		//background-color: green;	
+		flex: 1 1 auto;
+		width: 10%;	
 	}
 
-.nav-head__menu li {
-		height: 100%;
-		width: auto;
-		float: left;
-		padding-left: 35px;
-		//background-color: green;
-	}
+.nav-head__list {
+  		flex: 1 1 auto;
+  		display: flex;
+  		align-items: center;
 
-.nav-head__menu li ul {
-			display: none;
+  	}
+
+.nav-head__list--main-menu { 
+			//background-color: blue;	
+			width: 51.67%;
 		}
 
-.nav-head__social-links li {
-		height: 100%;
-		width: auto;
-		float: right;
+.nav-head__list--main-menu > li {
+				font-size: 1.45rem;
+				width: auto;
+				padding-left: 35px;
+			}
+
+.nav-head__list--main-menu > li > a {
+				font-weight: 500;				
+					color: #572d14;
+				}
+
+.nav-head__list--main-menu > li ul {
+					display: none;
+				}
+
+.nav-head__list--social-links {
+			//background-color: yellow;	
+			width: 14.27%;
+			justify-content: flex-end;		
+		}
+
+.nav-head__list--social-links li {
+				display: none;
+
+			}
+
+@media (min-width: 1171px) {
+
+.nav-head__list--social-links li {
+					display: block
+
+			}		 
 	}
 
-.nav-head__shopping-links li {
-		height: 100%;
-		width: auto;
-		float: right;
-	}
+.nav-head__list--shopping-links {
+			//background-color: red;	
+			width: 24.06%;
+			font-size: 1.45rem;
+		}
+
+.nav-head__list--shopping-links li {
+				height: 100%;
+				width: auto;
+				float: right;
+			}
 
 .intro {
 	position: relative;
 	overflow: hidden;
-	flex-basis:76px;
+	flex-basis:87px;
 	flex:1;
 
 
@@ -539,13 +590,23 @@ ul {
 	100% {-webkit-transform: translate(-50%, 4%) scale(1);transform: translate(-50%, 4%) scale(1);}
 }
 
+@keyframes nut-pieces-float {
+	0%   {-webkit-transform: translate(-50%, 4%) scale(1);transform: translate(-50%, 4%) scale(1);}
+	50%  {-webkit-transform: translate(-50%, 8%) scale(1);transform: translate(-50%, 8%) scale(1);}
+	100% {-webkit-transform: translate(-50%, 4%) scale(1);transform: translate(-50%, 4%) scale(1);}
+}
+
 @-webkit-keyframes nut-pieces-explosion {
 	0%   {-webkit-transform: translate(-50%, 4%) scale(0);transform: translate(-50%, 4%) scale(0);}
 	99% {-webkit-transform: translate(-50%, 4%) scale(1.03);transform: translate(-50%, 4%) scale(1.03);}
 	100% {-webkit-transform: translate(-50%, 4%) scale(1);transform: translate(-50%, 4%) scale(1);}
 }
 
-/* Standard syntax */
+@keyframes nut-pieces-explosion {
+	0%   {-webkit-transform: translate(-50%, 4%) scale(0);transform: translate(-50%, 4%) scale(0);}
+	99% {-webkit-transform: translate(-50%, 4%) scale(1.03);transform: translate(-50%, 4%) scale(1.03);}
+	100% {-webkit-transform: translate(-50%, 4%) scale(1);transform: translate(-50%, 4%) scale(1);}
+}
 
 @-webkit-keyframes hand-shake {
 	0%   {-webkit-transform: translate(-48%, 100%);transform: translate(-48%, 100%);}
@@ -570,7 +631,21 @@ ul {
 	100% {-webkit-transform: translate(-230%, 45%) scale(1);transform: translate(-230%, 45%) scale(1);}
 }
 
+@keyframes non-gmo-explosion {
+	0%   {-webkit-transform: translate(-230%, 45%) scale(0);transform: translate(-230%, 45%) scale(0);}
+	69%   {-webkit-transform: translate(-230%, 45%) scale(0);transform: translate(-230%, 45%) scale(0);}
+	98% {-webkit-transform: translate(-230%, 45%) scale(1.09);transform: translate(-230%, 45%) scale(1.09);}
+	100% {-webkit-transform: translate(-230%, 45%) scale(1);transform: translate(-230%, 45%) scale(1);}
+}
+
 @-webkit-keyframes popular-explosion {
+	0%   {-webkit-transform: translate(-225%, 330%) scale(0);transform: translate(-225%, 330%) scale(0);}
+	69%   {-webkit-transform: translate(-225%, 330%) scale(0);transform: translate(-225%, 330%) scale(0);}
+	98% {-webkit-transform: translate(-225%, 330%) scale(1.09);transform: translate(-225%, 330%) scale(1.09);}
+	100% {-webkit-transform: translate(-225%, 330%) scale(1);transform: translate(-225%, 330%) scale(1);}
+}
+
+@keyframes popular-explosion {
 	0%   {-webkit-transform: translate(-225%, 330%) scale(0);transform: translate(-225%, 330%) scale(0);}
 	69%   {-webkit-transform: translate(-225%, 330%) scale(0);transform: translate(-225%, 330%) scale(0);}
 	98% {-webkit-transform: translate(-225%, 330%) scale(1.09);transform: translate(-225%, 330%) scale(1.09);}
@@ -584,7 +659,21 @@ ul {
 	100% {-webkit-transform: translate(7%, 63%) scale(1);transform: translate(7%, 63%) scale(1);}
 }
 
+@keyframes delight-explosion {
+	0%   {-webkit-transform: translate(7%, 63%) scale(0);transform: translate(7%, 63%) scale(0);}
+	69%   {-webkit-transform: translate(7%, 63%) scale(0);transform: translate(7%, 63%) scale(0);}
+	98% {-webkit-transform: translate(7%, 63%) scale(1.09);transform: translate(7%, 63%) scale(1.09);}
+	100% {-webkit-transform: translate(7%, 63%) scale(1);transform: translate(7%, 63%) scale(1);}
+}
+
 @-webkit-keyframes vegan-explosion {
+	0%   {-webkit-transform: translate(240%, 355%) scale(0);transform: translate(240%, 355%) scale(0);}
+	69%   {-webkit-transform: translate(240%, 355%) scale(0);transform: translate(240%, 355%) scale(0);}
+	98% {-webkit-transform: translate(240%, 355%) scale(1.09);transform: translate(240%, 355%) scale(1.09);}
+	100% {-webkit-transform: translate(240%, 355%) scale(1);transform: translate(240%, 355%) scale(1);}
+}
+
+@keyframes vegan-explosion {
 	0%   {-webkit-transform: translate(240%, 355%) scale(0);transform: translate(240%, 355%) scale(0);}
 	69%   {-webkit-transform: translate(240%, 355%) scale(0);transform: translate(240%, 355%) scale(0);}
 	98% {-webkit-transform: translate(240%, 355%) scale(1.09);transform: translate(240%, 355%) scale(1.09);}
@@ -598,7 +687,21 @@ ul {
 	100% {-webkit-transform: translate(-208%, 95%) scale(1);transform: translate(-208%, 95%) scale(1);}
 }
 
+@keyframes gluten-free-explosion {
+	0%   {-webkit-transform: translate(-208%, 95%) scale(0);transform: translate(-208%, 95%) scale(0);}
+	69%   {-webkit-transform: translate(-208%, 95%) scale(0);transform: translate(-208%, 95%) scale(0);}
+	98% {-webkit-transform: translate(-208%, 95%) scale(1.09);transform: translate(-208%, 95%) scale(1.09);}
+	100% {-webkit-transform: translate(-208%, 95%) scale(1);transform: translate(-208%, 95%) scale(1);}
+}
+
 @-webkit-keyframes healthy-explosion {
+	0%   {-webkit-transform: translate(100%, 265%) scale(0);transform: translate(100%, 265%) scale(0);}
+	69%   {-webkit-transform: translate(100%, 265%) scale(0);transform: translate(100%, 265%) scale(0);}
+	98% {-webkit-transform: translate(100%, 265%) scale(1.09);transform: translate(100%, 265%) scale(1.09);}
+	100% {-webkit-transform: translate(100%, 265%) scale(1);transform: translate(100%, 265%) scale(1);}
+}
+
+@keyframes healthy-explosion {
 	0%   {-webkit-transform: translate(100%, 265%) scale(0);transform: translate(100%, 265%) scale(0);}
 	69%   {-webkit-transform: translate(100%, 265%) scale(0);transform: translate(100%, 265%) scale(0);}
 	98% {-webkit-transform: translate(100%, 265%) scale(1.09);transform: translate(100%, 265%) scale(1.09);}

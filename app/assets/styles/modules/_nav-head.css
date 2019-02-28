@@ -1,33 +1,75 @@
 .nav-head {
+	//background-color: gray;
 	height: $menuHeight;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
 
-	&__logo {
-		height: 100%;
-		width: auto;
-		float: left;
-		padding-left: 35px;
+  	a {
+		text-decoration: none;
+  	}
+
+  	img {
+  		display: block;
+  	}
+
+	&__logo {	
+		//background-color: green;	
+		flex: 1 1 auto;
+		width: 10%;	
 	}
 
-	&__menu li {
-		height: 100%;
-		width: auto;
-		float: left;
-		padding-left: 35px;
-		//background-color: green;
-		ul {
-			display: none;
+  	&__list {
+  		flex: 1 1 auto;
+  		display: flex;
+  		align-items: center;
+
+  		&--main-menu { 
+			//background-color: blue;	
+			width: 51.67%;
+			> li {
+				font-size: 1.45rem;
+				width: auto;
+				padding-left: 35px;
+				> a {
+				font-weight: 500;				
+					color: $mainBrown;
+				}
+				ul {
+					display: none;
+				}
+			}
 		}
-	}
 
-	&__social-links li {
-		height: 100%;
-		width: auto;
-		float: right;
-	}
+		&--social-links {
+			//background-color: yellow;	
+			width: 14.27%;
+			justify-content: flex-end;
+			li {
+				display: none;
 
-	&__shopping-links li {
-		height: 100%;
-		width: auto;
-		float: right;
-	}
+				@mixin atLarge {
+					display: block;
+				}
+
+			}		
+		}
+
+		&--shopping-links {
+			//background-color: red;	
+			width: 24.06%;
+			font-size: 1.45rem;
+
+			li {
+				height: 100%;
+				width: auto;
+				float: right;
+			}
+		}
+
+  	}
+
 }
