@@ -1,0 +1,12 @@
+.curly-button {		
+	background-image: url("/assets/images/button-bg.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	height: 42px;
+	color: #fff;
+	font-size: 1.45rem;
+	line-height: 42px;
+	padding-left: 20px;
+	padding-right: 20px;
+}

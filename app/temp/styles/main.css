@@ -363,6 +363,14 @@ ul {
 	padding: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+}
+
 .header {
 	font-family: 'Caveat Brush', cursive;
 	height: 100vh;
@@ -375,49 +383,68 @@ ul {
 .nav-head {
 	//background-color: gray;
 	height: 87px;
+/*flexbox*/
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	align-items: center;
+	////align-items: center;
+/*----*/
+
+/*no-flebox*/
+	padding-top: 25px;	
+/*--////--*/	
+
 	padding-left: 20px;
 	padding-right: 20px;
 
 }
 
-.nav-head a {
-		text-decoration: none;
-  	}
-
-.nav-head img {
-  		display: block;
-  	}
-
 .nav-head__logo {	
 		//background-color: green;	
+/*flexbox*/
 		flex: 1 1 auto;
+/*----*/
+
+/*no-flebox*/
+		//float: left;
+/*----*/
+
 		width: 10%;	
+		height: auto;
 	}
 
+.nav-head__logo img {
+			width: 100%;
+			max-width: 100px;
+			margin: 0 auto;
+		}
+
 .nav-head__list {
+/*flexbox*/  		
   		flex: 1 1 auto;
-  		display: flex;
-  		align-items: center;
+/*----*/
+
+/*no-flebox*/
+  		//float: left;
 
   	}
 
+/*----*/
+
 .nav-head__list--main-menu { 
-			//background-color: blue;	
+			//background-color: blue;
 			width: 51.67%;
 		}
 
 .nav-head__list--main-menu > li {
+				display: inline-block;
 				font-size: 1.45rem;
-				width: auto;
-				padding-left: 35px;
+				margin-left: 30px;
+				padding: 5px;
 			}
 
 .nav-head__list--main-menu > li > a {
-				font-weight: 500;				
+					font-weight: 500;				
 					color: #572d14;
 				}
 
@@ -426,35 +453,36 @@ ul {
 				}
 
 .nav-head__list--social-links {
-			//background-color: yellow;	
+			//background-color: yellow;
 			width: 14.27%;
-			justify-content: flex-end;		
+			text-align: right;
+			display: none;	
 		}
-
-.nav-head__list--social-links li {
-				display: none;
-
-			}
 
 @media (min-width: 1171px) {
 
-.nav-head__list--social-links li {
-					display: block
-
-			}		 
+.nav-head__list--social-links {
+				display: block	
+		}		 
 	}
 
+.nav-head__list--social-links li {
+				display: inline-block;
+				margin-right: 18px;
+			}
+
 .nav-head__list--shopping-links {
-			//background-color: red;	
+			//background-color: red;
 			width: 24.06%;
-			font-size: 1.45rem;
 		}
 
 .nav-head__list--shopping-links li {
-				height: 100%;
-				width: auto;
-				float: right;
+				float: left;
 			}
+
+.nav-head__list--shopping-links li:first-child {
+					margin-right: 18px;
+				}
 
 .intro {
 	position: relative;
@@ -710,4 +738,17 @@ ul {
 
 .wrapper {
 	
+}
+
+.curly-button {		
+	background-image: url("/assets/images/button-bg.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	height: 42px;
+	color: #fff;
+	font-size: 1.45rem;
+	line-height: 42px;
+	padding-left: 20px;
+	padding-right: 20px;
 }

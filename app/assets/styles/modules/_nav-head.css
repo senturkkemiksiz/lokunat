@@ -1,41 +1,59 @@
 .nav-head {
 	//background-color: gray;
 	height: $menuHeight;
+/*flexbox*/
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	align-items: center;
+	////align-items: center;
+/*----*/
+
+/*no-flebox*/
+	padding-top: 25px;	
+/*--////--*/	
+
 	padding-left: 20px;
 	padding-right: 20px;
 
-  	a {
-		text-decoration: none;
-  	}
-
-  	img {
-  		display: block;
-  	}
-
 	&__logo {	
 		//background-color: green;	
+/*flexbox*/
 		flex: 1 1 auto;
+/*----*/
+
+/*no-flebox*/
+		//float: left;
+/*----*/
+
 		width: 10%;	
+		height: auto;
+
+		img {
+			width: 100%;
+			max-width: 100px;
+			margin: 0 auto;
+		}
 	}
 
   	&__list {
+/*flexbox*/  		
   		flex: 1 1 auto;
-  		display: flex;
-  		align-items: center;
+/*----*/
+
+/*no-flebox*/
+  		//float: left;
+/*----*/
 
   		&--main-menu { 
-			//background-color: blue;	
+			//background-color: blue;
 			width: 51.67%;
 			> li {
+				display: inline-block;
 				font-size: 1.45rem;
-				width: auto;
-				padding-left: 35px;
+				margin-left: 30px;
+				padding: 5px;
 				> a {
-				font-weight: 500;				
+					font-weight: 500;				
 					color: $mainBrown;
 				}
 				ul {
@@ -45,28 +63,30 @@
 		}
 
 		&--social-links {
-			//background-color: yellow;	
+			//background-color: yellow;
 			width: 14.27%;
-			justify-content: flex-end;
+			text-align: right;
+			display: none;
+
+			@mixin atLarge {
+				display: block;
+			}	
+
 			li {
-				display: none;
-
-				@mixin atLarge {
-					display: block;
-				}
-
-			}		
+				display: inline-block;
+				margin-right: 18px;
+			}	
 		}
 
 		&--shopping-links {
-			//background-color: red;	
+			//background-color: red;
 			width: 24.06%;
-			font-size: 1.45rem;
 
 			li {
-				height: 100%;
-				width: auto;
-				float: right;
+				float: left;
+				&:first-child {
+					margin-right: 18px;
+				}
 			}
 		}
 
