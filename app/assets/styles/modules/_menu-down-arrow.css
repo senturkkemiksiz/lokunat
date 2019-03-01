@@ -7,7 +7,7 @@
 		display: inline-block;
 		width: 0.25em;
 		height: 0.04em;
-		background-color: #000;
+		//background-color: #000;
 		margin-bottom: 0.2em;
 	}
 	&::before {

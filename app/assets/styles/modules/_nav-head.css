@@ -31,6 +31,139 @@
 	}
 
 
+  	&__list {
+		display: none;
+/*flexbox*/  		
+  		flex: 1 1 auto;
+/*----*/
+/*no-flebox*/
+  		//float: left;
+/*----*/
+	}
+
+
+	&__list--main-menu { 		
+		position: fixed;
+		background-color: $mainBrown;	
+		z-index: 20;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;	
+		overflow-y: scroll;
+		padding: 90px 0 0 0;
+		&--open {
+			display: block;	
+		}
+		@mixin atMedium {
+			position: static;
+			overflow-y: visible;
+
+			display: block;
+			background-color: transparent;
+			width: 51.67%;
+			padding: 0 0 0 20px;
+		}			
+	}
+	&__list--main-menu__item {
+		//background-color: blue;
+		font-size: 1.9rem;
+		width: 85%;
+		margin:0 auto;
+		padding: 15px;
+		@mixin atMedium {
+			display: inline-block;
+			position: relative;
+			width: auto;
+			font-size: 1.45rem;
+			font-weight: 500;	
+			margin: 0px;
+			padding: 10px;
+			//background-color: green;				
+		}
+	}
+	&__list--main-menu__item__title {
+		display: inline-block;
+		color: #fff;
+		@mixin atMedium {
+			//background-color: green;			
+			color: $mainBrown;				
+		}
+	}
+	&__list--main-menu__item__dropdown {
+		display: none;
+		z-index: 30;
+	}			
+	&__list--main-menu__item .menu-down-arrow{
+		float: right;
+		@mixin atMedium {
+			float: none;
+		}
+		&::before, &::after{
+			background-color: #fff;	
+			@mixin atMedium {
+				background-color: $mainBrown;	
+			}
+		}
+	}	
+	&__list--main-menu__item:hover &__list--main-menu__item__dropdown {
+		@mixin atMedium {
+			display: block;
+			position: absolute;
+			top: 100%;
+			left: 0px;
+			width: 240px;
+			background-color: $mainBrown;
+			padding: 3px 0;	
+		}				
+	}
+	&__list--main-menu__item__subtitle {
+		font-size: 0.8em;
+		@mixin atMedium {
+			display: block;
+			color: #fff;
+			font-size: 0.87em;
+			padding: 10px 18px;				
+		}
+	}
+	&__list--main-menu__item__subtitle:hover {
+		@mixin atMedium {
+		color: $baseColor;
+		}
+	}
+
+	
+
+	&__list--social-links {
+		//background-color: yellow;
+		width: 14.27%;
+		text-align: right;
+		display: none;
+		@mixin atLarge {
+			display: block;
+		}	
+		li {
+			display: inline-block;
+			margin-right: 18px;
+		}	
+	}
+
+
+	&__list--shopping-links {
+		//background-color: red;
+		width: 24.06%;
+		@mixin atMedium {
+			display: block;
+		}
+		li {
+			float: left;
+			&:first-child {
+				margin-right: 18px;
+			}
+		}
+	}
+
+
 	&__menu-icon {
 		display: block;
 		position: absolute;
@@ -64,141 +197,6 @@
 		}		
 		@mixin atMedium {
 			display: none;
-		}
-	}
-
-
-  	&__list {
-		display: none;
-/*flexbox*/  		
-  		flex: 1 1 auto;
-/*----*/
-/*no-flebox*/
-  		//float: left;
-/*----*/
-	}
-
-
-	&__list--main-menu { 
-		//background-color: blue;		
-		display: block;
-		position: fixed;
-		background-color: $mainBrown;
-
-		&--visible {
-			z-index: 20;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			overflow-y: scroll;	
-			padding-top: 90px;	
-		}
-
-		@mixin atMedium {
-			display: block;
-			position: static;
-			background-color: transparent;
-			width: 51.67%;
-			padding-left: 20px;
-		}
-
-		&__item {
-			background-color: green;
-			font-size: 1.9rem;
-			width: 85%;
-			margin:0 auto;
-			padding: 15px;
-			@mixin atMedium {
-				display: inline-block;
-				position: relative;
-				font-size: 1.45rem;
-				font-weight: 500;	
-				margin-left: 0px;
-				padding: 10px;
-				//background-color: green;				
-			}
-		}
-		&__item__title {
-			color: #fff;
-			@mixin atMedium {
-				display: inline-block;
-				//background-color: green;			
-				color: $mainBrown;				
-			}
-		}
-		&__item__dropdown {
-			display: none;
-			@mixin atMedium {
-				z-index: 20;
-			}
-		}			
-		&__item .menu-down-arrow{
-				float: right;
-			@mixin atMedium {
-			}
-		}			
-		&__item .menu-down-arrow::before, &__item .menu-down-arrow::after{
-				background-color: #fff;	
-			@mixin atMedium {
-				background-color: $mainBrown;
-			}
-		}
-		&__item:hover &__item__dropdown {
-			@mixin atMedium {
-				display: block;
-				position: absolute;
-				top: 100%;
-				left: 0px;
-				width: 240px;
-				background-color: $mainBrown;
-				padding: 3px 0;	
-			}				
-		}
-		&__item__subtitle {
-			font-size: 0.8em;
-			@mixin atMedium {
-				display: block;
-				color: #fff;
-				font-size: 0.87em;
-				padding: 10px 18px;				
-			}
-		}
-		&__item__subtitle:hover {
-			@mixin atMedium {
-			color: $baseColor;
-			}
-		}			
-	}
-
-	
-
-	&__list--social-links {
-		//background-color: yellow;
-		width: 14.27%;
-		text-align: right;
-		display: none;
-		@mixin atLarge {
-			display: block;
-		}	
-		li {
-			display: inline-block;
-			margin-right: 18px;
-		}	
-	}
-
-
-	&__list--shopping-links {
-		//background-color: red;
-		width: 24.06%;
-		@mixin atMedium {
-			display: block;
-		}
-		li {
-			float: left;
-			&:first-child {
-				margin-right: 18px;
-			}
 		}
 	}
 
