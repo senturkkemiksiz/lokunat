@@ -1,5 +1,4 @@
 .nav-head {
-	position: relative;
 	//background-color: gray;
 	height: $menuHeight;
 	padding: 25px 20px 0 20px;
@@ -86,29 +85,65 @@
   		//float: left;
 /*----*/
 
-		@mixin atMedium {
-			display: block;
-		}
-
   		&--main-menu { 
 			//background-color: blue;
-			width: 51.67%;
-			padding-left: 20px;
-			&__item {
-				display: inline-block;
-				font-size: 1.45rem;
-				font-weight: 500;	
-				margin-left: 0px;
-				padding: 10px;
-				&__title {
+/*		
+			display: block;
+			position: absolute;
+			z-index: 30;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			//height: 100vh;
+			background-color: $mainBrown;
+			a {
+				color: #fff;
+			}
+*/
+			@mixin atMedium {
+				display: block;
+				width: 51.67%;
+				padding-left: 20px;
+				&__item {
 					display: inline-block;
-					//background-color: green;			
-					color: $mainBrown;
-				}
-				ul {
-					display: none;
+					position: relative;
+					font-size: 1.45rem;
+					font-weight: 500;	
+					margin-left: 0px;
+					padding: 10px;
+					//background-color: green;
+					&__title {
+						display: inline-block;
+						//background-color: green;			
+						color: $mainBrown;
+					}
+					&__dropdown {
+						display: none;
+					}
+					&:hover &__dropdown {
+						display: block;
+						position: absolute;
+						z-index: 20;
+						top: 100%;
+						left: 0px;
+						width: 240px;
+						background-color: $mainBrown;
+						padding: 3px 0;					
+					}
+					&__subtitle {
+					display: block;
+					color: #fff;
+					font-size: 0.87em;
+					padding: 10px 18px;
+						&:hover {
+							color: $baseColor;
+						}
+					}
 				}
 			}
+
+
 		}
 
 		&--social-links {
@@ -130,6 +165,10 @@
 		&--shopping-links {
 			//background-color: red;
 			width: 24.06%;
+
+			@mixin atMedium {
+				display: block;
+			}
 
 			li {
 				float: left;
