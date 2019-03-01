@@ -1,0 +1,21 @@
+.menu-down-arrow {	
+	display: inline-block;
+	padding: 0 0.1em;
+	//background-color: green;
+	&::before, &::after {
+		content:"";
+		display: inline-block;
+		width: 0.25em;
+		height: 0.04em;
+		background-color: $mainBrown;
+		margin-bottom: 0.2em;
+	}
+	&::before {
+		transform-origin: 100% 100%;
+		transform: rotate(40deg);
+	}
+	&::after {
+		transform-origin: 0 100%;
+		transform: rotate(-40deg);
+	}
+}
