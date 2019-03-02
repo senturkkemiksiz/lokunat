@@ -43,21 +43,24 @@
 		}
 		&--popular {
 			height: 17%;
-			transform: translate(-225%, 330%) scale(1);
+			//transform: translate(-225%, 330%) scale(1);
+			transform: translate(-221%, 257%) scale(1);
 			animation-name: popular-explosion;
 			animation-duration: 1.28s;
 			animation-iteration-count: 1;
 		}
 		&--delight {
 			height: 28%;
-			transform: translate(7%, 63%) scale(1);
+			//transform: translate(7%, 63%) scale(1);
+			transform: translate(61%, 35%) scale(1);
 			animation-name: delight-explosion;
 			animation-duration: 1.30s;
 			animation-iteration-count: 1;
 		}
 		&--vegan {
 			height: 11%;
-			transform: translate(240%, 355%) scale(1);
+			//transform: translate(240%, 355%) scale(1);
+			transform: translate(197%, 350%) scale(1);
 			animation-name: vegan-explosion;
 			animation-duration: 1.27s;
 			animation-iteration-count: 1;
@@ -108,22 +111,22 @@
 	100% {transform: translate(-230%, 45%) scale(1);}
 }
 @keyframes popular-explosion {
-	0%   {transform: translate(-225%, 330%) scale(0);}
-	69%   {transform: translate(-225%, 330%) scale(0);}
-	98% {transform: translate(-225%, 330%) scale(1.09);}
-	100% {transform: translate(-225%, 330%) scale(1);}
+	0%   {transform: translate(-221%, 257%) scale(0);}
+	69%   {transform: translate(-221%, 257%) scale(0);}
+	98% {transform: translate(-221%, 257%) scale(1.09);}
+	100% {transform: translate(-221%, 257%) scale(1);}
 }
 @keyframes delight-explosion {
-	0%   {transform: translate(7%, 63%) scale(0);}
-	69%   {transform: translate(7%, 63%) scale(0);}
-	98% {transform: translate(7%, 63%) scale(1.09);}
-	100% {transform: translate(7%, 63%) scale(1);}
+	0%   {transform: translate(61%, 35%) scale(0);}
+	69%   {transform: translate(61%, 35%) scale(0);}
+	98% {transform: translate(61%, 35%) scale(1.09);}
+	100% {transform: translate(61%, 35%) scale(1);}
 }
 @keyframes vegan-explosion {
-	0%   {transform: translate(240%, 355%) scale(0);}
-	69%   {transform: translate(240%, 355%) scale(0);}
-	98% {transform: translate(240%, 355%) scale(1.09);}
-	100% {transform: translate(240%, 355%) scale(1);}
+	0%   {transform: translate(197%, 350%) scale(0);}
+	69%   {transform: translate(197%, 350%) scale(0);}
+	98% {transform: translate(197%, 350%) scale(1.09);}
+	100% {transform: translate(197%, 350%) scale(1);}
 }
 @keyframes gluten-free-explosion {
 	0%   {transform: translate(-208%, 95%) scale(0);}
