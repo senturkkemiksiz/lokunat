@@ -67,11 +67,14 @@
 	}
 	&__list--main-menu__item {
 		//background-color: blue;
+		display: block;
 		font-size: 1.9rem;
 		width: 85%;
 		margin:0 auto;
 		padding: 15px;
+		@mixin clearfix;
 		@mixin atMedium {
+			//float: left;
 			display: inline-block;
 			position: relative;
 			width: auto;
@@ -79,23 +82,29 @@
 			font-weight: 500;	
 			margin: 0px;
 			padding: 10px;
-			//background-color: green;				
-		}
-		@mixin clearfix;
+			//background-color: green;	
+			&--mobile {
+				display: none;
+			}			
+		}		
 	}
 	&__list--main-menu__item__title {
 		display: block;
 		float: left;
 		color: #fff;
 		@mixin atMedium {
-		display: inline-block;
+			display: inline-block;
+			float: none;
 			//background-color: green;			
 			color: $mainBrown;				
 		}
 	}			
 	&__list--main-menu__item .menu-down-arrow{
+		//background-color: white;
+		display: block;
 		float: right;
 		@mixin atMedium {
+			display: inline-block;
 			float: none;
 		}
 		&::before, &::after{
@@ -122,9 +131,9 @@
 	}
 	&__list--main-menu__item__subtitle {
 		font-size: 0.8em;
+		display: block;
+		color: #fff;
 		@mixin atMedium {
-			display: block;
-			color: #fff;
 			font-size: 0.87em;
 			padding: 10px 18px;				
 		}
