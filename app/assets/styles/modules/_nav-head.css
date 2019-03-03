@@ -21,11 +21,12 @@
 		//float: left;
 /*----*/
 		@mixin atMedium {
-			width: 10%;			
+			//width: 10%;	
+			width: 13%;		
 		}
 		img {
 			width: 100%;
-			max-width: 100px;
+			max-width: 140px;
 			margin: 0 auto;
 		}
 	}
@@ -61,7 +62,8 @@
 
 			display: block;
 			background-color: transparent;
-			width: 51.67%;
+			//width: 51.67%;
+			width: 48.67%;
 			padding: 0 0 0 20px;
 		}			
 	}

@@ -416,13 +416,14 @@ img {
 @media (min-width: 981px) {
 
 .nav-head__logo {
-			width: 10%
+			//width: 10%;	
+			width: 13%
 	}		 
 	}
 
 .nav-head__logo img {
 			width: 100%;
-			max-width: 100px;
+			max-width: 140px;
 			margin: 0 auto;
 		}
 
@@ -460,7 +461,8 @@ img {
 
 			display: block;
 			background-color: transparent;
-			width: 51.67%;
+			//width: 51.67%;
+			width: 48.67%;
 			padding: 0 0 0 20px			
 	}		 
 	}
@@ -704,21 +706,23 @@ img {
 		z-index: 10;
 	}
 
-.intro__image--nut-pieces-explosion {
+.intro__image--nuts-explosion {
 			height: 85%;	
 			-webkit-transform: translate(-50%, 4%) scale(0);	
 			        transform: translate(-50%, 4%) scale(0);
 			-webkit-animation-name: nut-pieces-explosion;
 			        animation-name: nut-pieces-explosion;
+			//animation-duration: 0.4s;
 			-webkit-animation-duration: 0.4s;
 			        animation-duration: 0.4s;
-			-webkit-animation-delay: 0.87s;
-			        animation-delay: 0.87s;
+			//animation-delay: 0.87s;
+			-webkit-animation-delay: 1.27s;
+			        animation-delay: 1.27s;
 			-webkit-animation-iteration-count: 1;
 			        animation-iteration-count: 1;
 		}
 
-.intro__image--nut-pieces-float {
+.intro__image--nuts-float {
 			height: 85%;	
 			-webkit-transform: translate(-50%, 4%) scale(0);	
 			        transform: translate(-50%, 4%) scale(0);
@@ -726,96 +730,101 @@ img {
 			        animation-name: nut-pieces-float;
 			-webkit-animation-duration: 8s;
 			        animation-duration: 8s;
-			-webkit-animation-delay: 1.27s;
-			        animation-delay: 1.27s;
+			//animation-delay: 1.27s;
+			-webkit-animation-delay: 1.67s;
+			        animation-delay: 1.67s;
 			-webkit-animation-iteration-count: infinite;
 			        animation-iteration-count: infinite;
 		}
 
-.intro__image--hand-holding-pack {
-			height: 89%;
-			-webkit-transform: translate(-48%, 16%) scale(1);
-			        transform: translate(-48%, 16%) scale(1);
+.intro__image--hand-hold {
+			height: 82%;
+			-webkit-transform: translate(-50%, 24%) scale(1);
+			        transform: translate(-50%, 24%) scale(1);
 			-webkit-animation-name: hand-shake;
 			        animation-name: hand-shake;
-			-webkit-animation-duration: 1.3s;
-			        animation-duration: 1.3s;
+			-webkit-animation-duration: 1.7s;
+			        animation-duration: 1.7s;
 			//animation-timing-function: linear;
 			-webkit-animation-iteration-count: 1;
 			        animation-iteration-count: 1;
 		}
 
-.intro__image--non-gmo {
+.intro__image--bubble {
+			//display: none;
+		}
+
+.intro__image--bubble--non-gmo {
 			height: 14%;
 			-webkit-transform: translate(-230%, 45%) scale(1);
 			        transform: translate(-230%, 45%) scale(1);
 			-webkit-animation-name: non-gmo-explosion;
 			        animation-name: non-gmo-explosion;
-			-webkit-animation-duration: 1.27s;
-			        animation-duration: 1.27s;
+			-webkit-animation-duration: 1.9s;
+			        animation-duration: 1.9s;
 			-webkit-animation-iteration-count: 1;
 			        animation-iteration-count: 1;
 		}
 
-.intro__image--popular {
+.intro__image--bubble--popular {
 			height: 17%;
 			//transform: translate(-225%, 330%) scale(1);
-			-webkit-transform: translate(-221%, 257%) scale(1);
-			        transform: translate(-221%, 257%) scale(1);
+			-webkit-transform: translate(-221%, 265%) scale(1);
+			        transform: translate(-221%, 265%) scale(1);
 			-webkit-animation-name: popular-explosion;
 			        animation-name: popular-explosion;
-			-webkit-animation-duration: 1.28s;
-			        animation-duration: 1.28s;
+			-webkit-animation-duration: 1.8s;
+			        animation-duration: 1.8s;
 			-webkit-animation-iteration-count: 1;
 			        animation-iteration-count: 1;
 		}
 
-.intro__image--delight {
+.intro__image--bubble--delight {
 			height: 28%;
 			//transform: translate(7%, 63%) scale(1);
 			-webkit-transform: translate(61%, 35%) scale(1);
 			        transform: translate(61%, 35%) scale(1);
 			-webkit-animation-name: delight-explosion;
 			        animation-name: delight-explosion;
-			-webkit-animation-duration: 1.30s;
-			        animation-duration: 1.30s;
+			-webkit-animation-duration: 1.7s;
+			        animation-duration: 1.7s;
 			-webkit-animation-iteration-count: 1;
 			        animation-iteration-count: 1;
 		}
 
-.intro__image--vegan {
+.intro__image--bubble--vegan {
 			height: 11%;
 			//transform: translate(240%, 355%) scale(1);
 			-webkit-transform: translate(197%, 350%) scale(1);
 			        transform: translate(197%, 350%) scale(1);
 			-webkit-animation-name: vegan-explosion;
 			        animation-name: vegan-explosion;
-			-webkit-animation-duration: 1.27s;
-			        animation-duration: 1.27s;
+			-webkit-animation-duration: 2s;
+			        animation-duration: 2s;
 			-webkit-animation-iteration-count: 1;
 			        animation-iteration-count: 1;
 		}
 
-.intro__image--gluten-free {
+.intro__image--bubble--no-glucose {
 			height: 18%;
 			-webkit-transform: translate(-208%, 95%) scale(1);
 			        transform: translate(-208%, 95%) scale(1);
 			-webkit-animation-name: gluten-free-explosion;
 			        animation-name: gluten-free-explosion;
-			-webkit-animation-duration: 1.32s;
-			        animation-duration: 1.32s;
+			-webkit-animation-duration: 1.8s;
+			        animation-duration: 1.8s;
 			-webkit-animation-iteration-count: 1;
 			        animation-iteration-count: 1;
 		}
 
-.intro__image--healthy {
+.intro__image--bubble--healthy {
 			height: 18%;
-			-webkit-transform: translate(100%, 265%) scale(1);
-			        transform: translate(100%, 265%) scale(1);
+			-webkit-transform: translate(100%, 280%) scale(1);
+			        transform: translate(100%, 280%) scale(1);
 			-webkit-animation-name: healthy-explosion;
 			        animation-name: healthy-explosion;
-			-webkit-animation-duration: 1.30s;
-			        animation-duration: 1.30s;
+			-webkit-animation-duration: 1.7s;
+			        animation-duration: 1.7s;
 			-webkit-animation-iteration-count: 1;
 			        animation-iteration-count: 1;
 		}
@@ -834,114 +843,130 @@ img {
 
 @-webkit-keyframes nut-pieces-explosion {
 	0%   {-webkit-transform: translate(-50%, 4%) scale(0);transform: translate(-50%, 4%) scale(0);}
+	20%   {-webkit-transform: translate(-50%, 4%) scale(0);transform: translate(-50%, 4%) scale(0);}
 	99% {-webkit-transform: translate(-50%, 4%) scale(1.03);transform: translate(-50%, 4%) scale(1.03);}
 	100% {-webkit-transform: translate(-50%, 4%) scale(1);transform: translate(-50%, 4%) scale(1);}
 }
 
 @keyframes nut-pieces-explosion {
 	0%   {-webkit-transform: translate(-50%, 4%) scale(0);transform: translate(-50%, 4%) scale(0);}
+	20%   {-webkit-transform: translate(-50%, 4%) scale(0);transform: translate(-50%, 4%) scale(0);}
 	99% {-webkit-transform: translate(-50%, 4%) scale(1.03);transform: translate(-50%, 4%) scale(1.03);}
 	100% {-webkit-transform: translate(-50%, 4%) scale(1);transform: translate(-50%, 4%) scale(1);}
 }
 
 @-webkit-keyframes hand-shake {
-	0%   {-webkit-transform: translate(-48%, 100%);transform: translate(-48%, 100%);}
-	67%  {-webkit-transform: translate(-48%, 16%);transform: translate(-48%, 16%);}
-	78%  {-webkit-transform: translate(-48%, 16%) rotate(2.5deg);transform: translate(-48%, 16%) rotate(2.5deg); -webkit-transform-origin: 0% 150%; transform-origin: 0% 150%;}
-	89%  {-webkit-transform: translate(-48%, 16%) rotate(-3.5deg);transform: translate(-48%, 16%) rotate(-3.5deg); -webkit-transform-origin: 100% 150%; transform-origin: 100% 150%;}
-	100% {-webkit-transform: translate(-48%, 16%) rotate(0deg);transform: translate(-48%, 16%) rotate(0deg); -webkit-transform-origin: 100% 150%; transform-origin: 100% 150%;}
+	0%   {-webkit-transform: translate(-48%, 113%);transform: translate(-48%, 113%);}
+	20%   {-webkit-transform: translate(-48%, 113%);transform: translate(-48%, 113%);}
+	73%  {-webkit-transform: translate(-50%, 24%);transform: translate(-50%, 24%);}
+	80%  {-webkit-transform: translate(-50%, 24%) rotate(-2.5deg);transform: translate(-50%, 24%) rotate(-2.5deg); -webkit-transform-origin: 100% 250%; transform-origin: 100% 250%;}
+	93%  {-webkit-transform: translate(-50%, 24%) rotate(1deg);transform: translate(-50%, 24%) rotate(1deg); -webkit-transform-origin: 100% 250%; transform-origin: 100% 250%;}
+	100% {-webkit-transform: translate(-50%, 24%) rotate(0deg);transform: translate(-50%, 24%) rotate(0deg); -webkit-transform-origin: 100% 250%; transform-origin: 100% 250%;}
 }
 
 @keyframes hand-shake {
-	0%   {-webkit-transform: translate(-48%, 100%);transform: translate(-48%, 100%);}
-	67%  {-webkit-transform: translate(-48%, 16%);transform: translate(-48%, 16%);}
-	78%  {-webkit-transform: translate(-48%, 16%) rotate(2.5deg);transform: translate(-48%, 16%) rotate(2.5deg); -webkit-transform-origin: 0% 150%; transform-origin: 0% 150%;}
-	89%  {-webkit-transform: translate(-48%, 16%) rotate(-3.5deg);transform: translate(-48%, 16%) rotate(-3.5deg); -webkit-transform-origin: 100% 150%; transform-origin: 100% 150%;}
-	100% {-webkit-transform: translate(-48%, 16%) rotate(0deg);transform: translate(-48%, 16%) rotate(0deg); -webkit-transform-origin: 100% 150%; transform-origin: 100% 150%;}
+	0%   {-webkit-transform: translate(-48%, 113%);transform: translate(-48%, 113%);}
+	20%   {-webkit-transform: translate(-48%, 113%);transform: translate(-48%, 113%);}
+	73%  {-webkit-transform: translate(-50%, 24%);transform: translate(-50%, 24%);}
+	80%  {-webkit-transform: translate(-50%, 24%) rotate(-2.5deg);transform: translate(-50%, 24%) rotate(-2.5deg); -webkit-transform-origin: 100% 250%; transform-origin: 100% 250%;}
+	93%  {-webkit-transform: translate(-50%, 24%) rotate(1deg);transform: translate(-50%, 24%) rotate(1deg); -webkit-transform-origin: 100% 250%; transform-origin: 100% 250%;}
+	100% {-webkit-transform: translate(-50%, 24%) rotate(0deg);transform: translate(-50%, 24%) rotate(0deg); -webkit-transform-origin: 100% 250%; transform-origin: 100% 250%;}
 }
 
 @-webkit-keyframes non-gmo-explosion {
 	0%   {-webkit-transform: translate(-230%, 45%) scale(0);transform: translate(-230%, 45%) scale(0);}
-	69%   {-webkit-transform: translate(-230%, 45%) scale(0);transform: translate(-230%, 45%) scale(0);}
+	20%   {-webkit-transform: translate(-230%, 45%) scale(0);transform: translate(-230%, 45%) scale(0);}
+	80%   {-webkit-transform: translate(-230%, 45%) scale(0);transform: translate(-230%, 45%) scale(0);}
 	98% {-webkit-transform: translate(-230%, 45%) scale(1.09);transform: translate(-230%, 45%) scale(1.09);}
 	100% {-webkit-transform: translate(-230%, 45%) scale(1);transform: translate(-230%, 45%) scale(1);}
 }
 
 @keyframes non-gmo-explosion {
 	0%   {-webkit-transform: translate(-230%, 45%) scale(0);transform: translate(-230%, 45%) scale(0);}
-	69%   {-webkit-transform: translate(-230%, 45%) scale(0);transform: translate(-230%, 45%) scale(0);}
+	20%   {-webkit-transform: translate(-230%, 45%) scale(0);transform: translate(-230%, 45%) scale(0);}
+	80%   {-webkit-transform: translate(-230%, 45%) scale(0);transform: translate(-230%, 45%) scale(0);}
 	98% {-webkit-transform: translate(-230%, 45%) scale(1.09);transform: translate(-230%, 45%) scale(1.09);}
 	100% {-webkit-transform: translate(-230%, 45%) scale(1);transform: translate(-230%, 45%) scale(1);}
 }
 
 @-webkit-keyframes popular-explosion {
-	0%   {-webkit-transform: translate(-221%, 257%) scale(0);transform: translate(-221%, 257%) scale(0);}
-	69%   {-webkit-transform: translate(-221%, 257%) scale(0);transform: translate(-221%, 257%) scale(0);}
-	98% {-webkit-transform: translate(-221%, 257%) scale(1.09);transform: translate(-221%, 257%) scale(1.09);}
-	100% {-webkit-transform: translate(-221%, 257%) scale(1);transform: translate(-221%, 257%) scale(1);}
+	0%   {-webkit-transform: translate(-221%, 265%) scale(0);transform: translate(-221%, 265%) scale(0);}
+	20%   {-webkit-transform: translate(-221%, 265%) scale(0);transform: translate(-221%, 265%) scale(0);}
+	80%   {-webkit-transform: translate(-221%, 265%) scale(0);transform: translate(-221%, 265%) scale(0);}
+	98% {-webkit-transform: translate(-221%, 265%) scale(1.09);transform: translate(-221%, 265%) scale(1.09);}
+	100% {-webkit-transform: translate(-221%, 265%) scale(1);transform: translate(-221%, 265%) scale(1);}
 }
 
 @keyframes popular-explosion {
-	0%   {-webkit-transform: translate(-221%, 257%) scale(0);transform: translate(-221%, 257%) scale(0);}
-	69%   {-webkit-transform: translate(-221%, 257%) scale(0);transform: translate(-221%, 257%) scale(0);}
-	98% {-webkit-transform: translate(-221%, 257%) scale(1.09);transform: translate(-221%, 257%) scale(1.09);}
-	100% {-webkit-transform: translate(-221%, 257%) scale(1);transform: translate(-221%, 257%) scale(1);}
+	0%   {-webkit-transform: translate(-221%, 265%) scale(0);transform: translate(-221%, 265%) scale(0);}
+	20%   {-webkit-transform: translate(-221%, 265%) scale(0);transform: translate(-221%, 265%) scale(0);}
+	80%   {-webkit-transform: translate(-221%, 265%) scale(0);transform: translate(-221%, 265%) scale(0);}
+	98% {-webkit-transform: translate(-221%, 265%) scale(1.09);transform: translate(-221%, 265%) scale(1.09);}
+	100% {-webkit-transform: translate(-221%, 265%) scale(1);transform: translate(-221%, 265%) scale(1);}
 }
 
 @-webkit-keyframes delight-explosion {
 	0%   {-webkit-transform: translate(61%, 35%) scale(0);transform: translate(61%, 35%) scale(0);}
-	69%   {-webkit-transform: translate(61%, 35%) scale(0);transform: translate(61%, 35%) scale(0);}
+	20%   {-webkit-transform: translate(61%, 35%) scale(0);transform: translate(61%, 35%) scale(0);}
+	80%   {-webkit-transform: translate(61%, 35%) scale(0);transform: translate(61%, 35%) scale(0);}
 	98% {-webkit-transform: translate(61%, 35%) scale(1.09);transform: translate(61%, 35%) scale(1.09);}
 	100% {-webkit-transform: translate(61%, 35%) scale(1);transform: translate(61%, 35%) scale(1);}
 }
 
 @keyframes delight-explosion {
 	0%   {-webkit-transform: translate(61%, 35%) scale(0);transform: translate(61%, 35%) scale(0);}
-	69%   {-webkit-transform: translate(61%, 35%) scale(0);transform: translate(61%, 35%) scale(0);}
+	20%   {-webkit-transform: translate(61%, 35%) scale(0);transform: translate(61%, 35%) scale(0);}
+	80%   {-webkit-transform: translate(61%, 35%) scale(0);transform: translate(61%, 35%) scale(0);}
 	98% {-webkit-transform: translate(61%, 35%) scale(1.09);transform: translate(61%, 35%) scale(1.09);}
 	100% {-webkit-transform: translate(61%, 35%) scale(1);transform: translate(61%, 35%) scale(1);}
 }
 
 @-webkit-keyframes vegan-explosion {
 	0%   {-webkit-transform: translate(197%, 350%) scale(0);transform: translate(197%, 350%) scale(0);}
-	69%   {-webkit-transform: translate(197%, 350%) scale(0);transform: translate(197%, 350%) scale(0);}
+	20%   {-webkit-transform: translate(197%, 350%) scale(0);transform: translate(197%, 350%) scale(0);}
+	80%   {-webkit-transform: translate(197%, 350%) scale(0);transform: translate(197%, 350%) scale(0);}
 	98% {-webkit-transform: translate(197%, 350%) scale(1.09);transform: translate(197%, 350%) scale(1.09);}
 	100% {-webkit-transform: translate(197%, 350%) scale(1);transform: translate(197%, 350%) scale(1);}
 }
 
 @keyframes vegan-explosion {
 	0%   {-webkit-transform: translate(197%, 350%) scale(0);transform: translate(197%, 350%) scale(0);}
-	69%   {-webkit-transform: translate(197%, 350%) scale(0);transform: translate(197%, 350%) scale(0);}
+	20%   {-webkit-transform: translate(197%, 350%) scale(0);transform: translate(197%, 350%) scale(0);}
+	80%   {-webkit-transform: translate(197%, 350%) scale(0);transform: translate(197%, 350%) scale(0);}
 	98% {-webkit-transform: translate(197%, 350%) scale(1.09);transform: translate(197%, 350%) scale(1.09);}
 	100% {-webkit-transform: translate(197%, 350%) scale(1);transform: translate(197%, 350%) scale(1);}
 }
 
 @-webkit-keyframes gluten-free-explosion {
 	0%   {-webkit-transform: translate(-208%, 95%) scale(0);transform: translate(-208%, 95%) scale(0);}
-	69%   {-webkit-transform: translate(-208%, 95%) scale(0);transform: translate(-208%, 95%) scale(0);}
+	20%   {-webkit-transform: translate(-208%, 95%) scale(0);transform: translate(-208%, 95%) scale(0);}
+	80%   {-webkit-transform: translate(-208%, 95%) scale(0);transform: translate(-208%, 95%) scale(0);}
 	98% {-webkit-transform: translate(-208%, 95%) scale(1.09);transform: translate(-208%, 95%) scale(1.09);}
 	100% {-webkit-transform: translate(-208%, 95%) scale(1);transform: translate(-208%, 95%) scale(1);}
 }
 
 @keyframes gluten-free-explosion {
 	0%   {-webkit-transform: translate(-208%, 95%) scale(0);transform: translate(-208%, 95%) scale(0);}
-	69%   {-webkit-transform: translate(-208%, 95%) scale(0);transform: translate(-208%, 95%) scale(0);}
+	20%   {-webkit-transform: translate(-208%, 95%) scale(0);transform: translate(-208%, 95%) scale(0);}
+	80%   {-webkit-transform: translate(-208%, 95%) scale(0);transform: translate(-208%, 95%) scale(0);}
 	98% {-webkit-transform: translate(-208%, 95%) scale(1.09);transform: translate(-208%, 95%) scale(1.09);}
 	100% {-webkit-transform: translate(-208%, 95%) scale(1);transform: translate(-208%, 95%) scale(1);}
 }
 
 @-webkit-keyframes healthy-explosion {
-	0%   {-webkit-transform: translate(100%, 265%) scale(0);transform: translate(100%, 265%) scale(0);}
-	69%   {-webkit-transform: translate(100%, 265%) scale(0);transform: translate(100%, 265%) scale(0);}
-	98% {-webkit-transform: translate(100%, 265%) scale(1.09);transform: translate(100%, 265%) scale(1.09);}
-	100% {-webkit-transform: translate(100%, 265%) scale(1);transform: translate(100%, 265%) scale(1);}
+	0%   {-webkit-transform: translate(100%, 280%) scale(0);transform: translate(100%, 280%) scale(0);}
+	20%   {-webkit-transform: translate(100%, 280%) scale(0);transform: translate(100%, 280%) scale(0);}
+	80%   {-webkit-transform: translate(100%, 280%) scale(0);transform: translate(100%, 280%) scale(0);}
+	98% {-webkit-transform: translate(100%, 280%) scale(1.09);transform: translate(100%, 280%) scale(1.09);}
+	100% {-webkit-transform: translate(100%, 280%) scale(1);transform: translate(100%, 280%) scale(1);}
 }
 
 @keyframes healthy-explosion {
-	0%   {-webkit-transform: translate(100%, 265%) scale(0);transform: translate(100%, 265%) scale(0);}
-	69%   {-webkit-transform: translate(100%, 265%) scale(0);transform: translate(100%, 265%) scale(0);}
-	98% {-webkit-transform: translate(100%, 265%) scale(1.09);transform: translate(100%, 265%) scale(1.09);}
-	100% {-webkit-transform: translate(100%, 265%) scale(1);transform: translate(100%, 265%) scale(1);}
+	0%   {-webkit-transform: translate(100%, 280%) scale(0);transform: translate(100%, 280%) scale(0);}
+	20%   {-webkit-transform: translate(100%, 280%) scale(0);transform: translate(100%, 280%) scale(0);}
+	80%   {-webkit-transform: translate(100%, 280%) scale(0);transform: translate(100%, 280%) scale(0);}
+	98% {-webkit-transform: translate(100%, 280%) scale(1.09);transform: translate(100%, 280%) scale(1.09);}
+	100% {-webkit-transform: translate(100%, 280%) scale(1);transform: translate(100%, 280%) scale(1);}
 }
 
 .wrapper {
