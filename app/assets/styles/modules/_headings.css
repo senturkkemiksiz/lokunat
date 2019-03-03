@@ -1,0 +1,24 @@
+.heading {
+	font-family: 'Caveat Brush', cursive;
+	&--center {
+		text-align: center;		
+	}
+	&--left {
+		text-align: left;		
+	}
+	&--brown {
+		color:$mainBrown;
+	}
+	&--purple {
+		color:$mainPurple;
+	}
+	&__purple {
+		color:$mainPurple;
+	}
+	&--size-2 {
+
+	}
+	&--size-3 {
+		
+	}
+}
