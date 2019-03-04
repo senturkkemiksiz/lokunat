@@ -5,8 +5,7 @@
 @import "base/_global";
 
 @import "modules/_header";
-@import "modules/_header-nav";
-@import "modules/_header-wall";
+@import "modules/_intro-show";
 @import "modules/_wrapper";
 @import "modules/_curly-button";
 @import "modules/_menu-down-arrow";
