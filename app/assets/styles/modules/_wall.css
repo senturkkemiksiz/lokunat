@@ -1,0 +1,29 @@
+.wall {
+	&__text {
+		&--half {
+			width: 50%;
+		margin: 0 auto;
+		}
+	}
+	&__image {
+		&--large {
+			width: 100%;
+		}
+		&--half {
+			width: 50%;
+		}
+	}
+	&--center {
+		text-align: center;
+	}
+	&--right {
+		&__text, &__image {
+			float: right;		
+		}
+	}
+	&--left {
+		&__text, &__image {
+			float: left;			
+		}
+	}
+}

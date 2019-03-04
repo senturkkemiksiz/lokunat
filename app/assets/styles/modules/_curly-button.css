@@ -1,6 +1,6 @@
 .curly-button {
 	font-family: 'Caveat Brush', cursive;		
-	display: block;
+	display: inline-block;
 	color: #fff;
 	font-size: 1.45rem;
 	padding: 8px 20px;

@@ -1,11 +1,5 @@
 .heading {
 	font-family: 'Caveat Brush', cursive;
-	&--center {
-		text-align: center;		
-	}
-	&--left {
-		text-align: left;		
-	}
 	&--brown {
 		color:$mainBrown;
 	}
