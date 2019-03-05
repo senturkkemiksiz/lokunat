@@ -1,0 +1,175 @@
+.intro-show {
+/*flexbox*/	
+	display: flex;	
+  	flex-direction: column;
+ /*-----*/
+	overflow: hidden;
+	height: 100vh;
+	max-height: 100vw;
+	margin-top: -$menuHeight;
+	padding-top: $menuHeight;	
+	background-color: $baseColor;
+
+	&__adjustment-box {	
+		position: relative;
+/*flexbox*/	
+		flex-basis:$menuHeight;
+		flex:1;
+/*-----*/
+/*no-flexbox*/		
+		//height: 100%;
+/*-----*/	
+	}
+
+	&__image {
+		position: absolute;
+		display: block;
+		left: 50%;	
+		z-index: 10;
+	
+		&--nuts-explosion {
+			height: 85%;	
+			transform: translate(-50%, 4%) scale(0);
+			animation-name: nut-pieces-explosion;
+			//animation-duration: 0.4s;
+			animation-duration: 0.4s;
+			//animation-delay: 0.87s;
+			animation-delay: 1.27s;
+			animation-iteration-count: 1;
+		}
+		&--nuts-float {
+			height: 85%;	
+			transform: translate(-50%, 4%) scale(0);
+			animation-name: nut-pieces-float;
+			animation-duration: 8s;
+			//animation-delay: 1.27s;
+			animation-delay: 1.67s;
+			animation-iteration-count: infinite;
+		}
+		&--hand-hold {
+			height: 82%;
+			transform: translate(-50%, 24%) scale(1);
+			animation-name: hand-shake;
+			animation-duration: 1.7s;
+			//animation-timing-function: linear;
+			animation-iteration-count: 1;
+		}
+		&--bubble {
+			//display: none;
+		}
+		&--bubble--non-gmo {
+			height: 14%;
+			transform: translate(-230%, 45%) scale(1);
+			animation-name: non-gmo-explosion;
+			animation-duration: 1.9s;
+			animation-iteration-count: 1;
+		}
+		&--bubble--popular {
+			height: 17%;
+			//transform: translate(-225%, 330%) scale(1);
+			transform: translate(-221%, 265%) scale(1);
+			animation-name: popular-explosion;
+			animation-duration: 1.8s;
+			animation-iteration-count: 1;
+		}
+		&--bubble--delight {
+			height: 28%;
+			//transform: translate(7%, 63%) scale(1);
+			transform: translate(61%, 35%) scale(1);
+			animation-name: delight-explosion;
+			animation-duration: 1.7s;
+			animation-iteration-count: 1;
+		}
+		&--bubble--vegan {
+			height: 11%;
+			//transform: translate(240%, 355%) scale(1);
+			transform: translate(197%, 350%) scale(1);
+			animation-name: vegan-explosion;
+			animation-duration: 2s;
+			animation-iteration-count: 1;
+		}
+		&--bubble--no-glucose {
+			height: 18%;
+			transform: translate(-208%, 95%) scale(1);
+			animation-name: gluten-free-explosion;
+			animation-duration: 1.8s;
+			animation-iteration-count: 1;
+		}
+		&--bubble--healthy {
+			height: 18%;
+			transform: translate(100%, 280%) scale(1);
+			animation-name: healthy-explosion;
+			animation-duration: 1.7s;
+			animation-iteration-count: 1;
+		}
+	}
+
+
+}
+
+@keyframes nut-pieces-float {
+	0%   {transform: translate(-50%, 4%) scale(1);}
+	50%  {transform: translate(-50%, 8%) scale(1);}
+	100% {transform: translate(-50%, 4%) scale(1);}
+}
+@keyframes nut-pieces-explosion {
+	0%   {transform: translate(-50%, 4%) scale(0);}
+	20%   {transform: translate(-50%, 4%) scale(0);}
+	99% {transform: translate(-50%, 4%) scale(1.03);}
+	100% {transform: translate(-50%, 4%) scale(1);}
+}
+
+
+@keyframes hand-shake {
+	0%   {transform: translate(-48%, 113%);}
+	20%   {transform: translate(-48%, 113%);}
+	73%  {transform: translate(-50%, 24%);}
+	80%  {transform: translate(-50%, 24%) rotate(-2.5deg); transform-origin: 100% 250%;}
+	93%  {transform: translate(-50%, 24%) rotate(1deg); transform-origin: 100% 250%;}
+	100% {transform: translate(-50%, 24%) rotate(0deg); transform-origin: 100% 250%;}
+}
+
+@keyframes non-gmo-explosion {
+	0%   {transform: translate(-230%, 45%) scale(0);}
+	20%   {transform: translate(-230%, 45%) scale(0);}
+	80%   {transform: translate(-230%, 45%) scale(0);}
+	98% {transform: translate(-230%, 45%) scale(1.09);}
+	100% {transform: translate(-230%, 45%) scale(1);}
+}
+@keyframes popular-explosion {
+	0%   {transform: translate(-221%, 265%) scale(0);}
+	20%   {transform: translate(-221%, 265%) scale(0);}
+	80%   {transform: translate(-221%, 265%) scale(0);}
+	98% {transform: translate(-221%, 265%) scale(1.09);}
+	100% {transform: translate(-221%, 265%) scale(1);}
+}
+@keyframes delight-explosion {
+	0%   {transform: translate(61%, 35%) scale(0);}
+	20%   {transform: translate(61%, 35%) scale(0);}
+	80%   {transform: translate(61%, 35%) scale(0);}
+	98% {transform: translate(61%, 35%) scale(1.09);}
+	100% {transform: translate(61%, 35%) scale(1);}
+}
+@keyframes vegan-explosion {
+	0%   {transform: translate(197%, 350%) scale(0);}
+	20%   {transform: translate(197%, 350%) scale(0);}
+	80%   {transform: translate(197%, 350%) scale(0);}
+	98% {transform: translate(197%, 350%) scale(1.09);}
+	100% {transform: translate(197%, 350%) scale(1);}
+}
+@keyframes gluten-free-explosion {
+	0%   {transform: translate(-208%, 95%) scale(0);}
+	20%   {transform: translate(-208%, 95%) scale(0);}
+	80%   {transform: translate(-208%, 95%) scale(0);}
+	98% {transform: translate(-208%, 95%) scale(1.09);}
+	100% {transform: translate(-208%, 95%) scale(1);}
+}
+@keyframes healthy-explosion {
+	0%   {transform: translate(100%, 280%) scale(0);}
+	20%   {transform: translate(100%, 280%) scale(0);}
+	80%   {transform: translate(100%, 280%) scale(0);}
+	98% {transform: translate(100%, 280%) scale(1.09);}
+	100% {transform: translate(100%, 280%) scale(1);}
+}
+
+
