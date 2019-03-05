@@ -5,9 +5,11 @@
 @import "base/_global";
 
 @import "modules/_header";
-@import "modules/_intro-show";
 @import "modules/_wrapper";
 @import "modules/_curly-button";
 @import "modules/_menu-down-arrow";
 @import "modules/_headings";
-@import "modules/_wall";
+@import "modules/_row";
+@import "modules/content-container";
+
+@import "home/_intro-show";

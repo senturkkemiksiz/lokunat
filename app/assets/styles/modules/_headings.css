@@ -1,13 +1,13 @@
 .heading {
 	font-family: 'Caveat Brush', cursive;
-	&--brown {
+	&__brown {
 		color:$mainBrown;
-	}
-	&--purple {
-		color:$mainPurple;
 	}
 	&__purple {
 		color:$mainPurple;
+	}
+	&--center {
+		text-align: center;
 	}
 	&--size-2 {
 

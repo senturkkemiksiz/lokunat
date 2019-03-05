@@ -1,3 +1,17 @@
 .row {
-	
+	&__center {
+		margin: 0 auto;
+	}
+	&__right {
+		float: right;
+	}
+	&__left {
+		float: left;
+	}
+
+	@mixin atLarge {
+		&__large-6 {
+			width: 50%;
+		}
+	}
 }
