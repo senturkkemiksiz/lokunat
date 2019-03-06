@@ -5,6 +5,7 @@
 body {
 	position: relative;
 	font-family: 'Roboto', sans-serif;
+	color: $mainBrown;
 }
 
 ul {
@@ -18,8 +19,11 @@ a {
 }
 
 img {
-	//display: block;
 	max-width: 100%;
+	&--center {
+		display: block;
+		margin: 0 auto;
+	}
 }
 
 h1, h2 {

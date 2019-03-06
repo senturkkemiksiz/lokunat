@@ -2,7 +2,24 @@
 	overflow: hidden;
 	padding-left: 20px;
 	padding-right: 20px;
-	max-width: 1236px;
+	max-width: 1269px;
 	margin-left: auto;
 	margin-right: auto;
+	.wrapper {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	&--full-width {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	&--small {
+		max-width: 400px;
+	}
+	&--medium {
+		max-width: 600px;
+	}
+	&--large {
+		max-width: 1000px;
+	}
 }

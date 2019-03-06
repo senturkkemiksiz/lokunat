@@ -356,6 +356,7 @@ template {
 body {
 	position: relative;
 	font-family: 'Roboto', sans-serif;
+	color: #572d14;
 }
 
 ul {
@@ -369,9 +370,13 @@ a {
 }
 
 img {
-	//display: block;
 	max-width: 100%;
 }
+
+img--center {
+		display: block;
+		margin: 0 auto;
+	}
 
 h1, h2 {
 	margin: 0;
@@ -702,10 +707,32 @@ h1, h2 {
 	overflow: hidden;
 	padding-left: 20px;
 	padding-right: 20px;
-	max-width: 1236px;
+	max-width: 1269px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.wrapper .wrapper {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+.wrapper--full-width {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+.wrapper--small {
+		max-width: 400px;
+	}
+
+.wrapper--medium {
+		max-width: 600px;
+	}
+
+.wrapper--large {
+		max-width: 1000px;
+	}
 
 .curly-button {
 	font-family: 'Caveat Brush', cursive;		
@@ -784,8 +811,29 @@ h1, h2 {
 	}
 
 @media (min-width: 1171px) {
+		.row__large-3 {
+			width: 25%;
+		}
+		.row__large-4 {
+			width: 33.33%;
+		}
+		.row__large-5 {
+			width: 41.66%;
+		}
 		.row__large-6 {
 			width: 50%;
+		}
+		.row__large-7 {
+			width: 58.33%;
+		}
+		.row__large-8 {
+			width: 66.66%;
+		}
+		.row__large-9 {
+			width: 74.99%;
+		}
+		.row__large-12 {
+			width: 100%;
 		}		 
 	}
 
