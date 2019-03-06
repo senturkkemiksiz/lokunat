@@ -705,25 +705,28 @@ h1, h2 {
 
 .wrapper {
 	overflow: hidden;
-	padding-left: 20px;
-	padding-right: 20px;
-	max-width: 1269px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 0;
+	padding-right: 0;
 }
 
-.wrapper--no-padding {
-		padding-left: 0;
-		padding-right: 0;
+@media (min-width: 981px) {
+
+.wrapper {
+		padding-left: 20px;
+		padding-right: 20px
+}		 
 	}
 
-.wrapper--left {
-		float: left;
+/*
+	&--no-padding {		
 	}
-
-.wrapper--right {
-		float: right;
+	&--left {
 	}
+	&--right {
+	}
+*/
 
 .wrapper .wrapper {
 		padding-left: 0;
@@ -734,12 +737,22 @@ h1, h2 {
 		max-width: 400px;
 	}
 
+@media (min-width: 981px) {
+
+.wrapper--small {
+			max-width: 100%
+	}		 
+	}
+
+@media (min-width: 981px) {
+
 .wrapper--medium {
-		max-width: 600px;
+			max-width: 66%
+	}		 
 	}
 
 .wrapper--large {
-		max-width: 1000px;
+		max-width: 1100px;
 	}
 
 .curly-button {
@@ -812,8 +825,14 @@ h1, h2 {
 		display: table;
 	}
 
+.row .column {
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 100%;		
+	}
+
 .row .column--center {
-			margin: 0 auto;
+			padding: 0 auto;
 		}
 
 .row .column--right {
@@ -824,30 +843,34 @@ h1, h2 {
 			float: left;
 		}
 
-@media (min-width: 1171px) {
-			.row .column--large-3 {
-				width: 25%;
-			}
-			.row .column--large-4 {
+@media (min-width: 981px) {
+			.row .column--medium-4 {
 				width: 33.33%;
 			}
-			.row .column--large-5 {
-				width: 41.66%;
+			.row .column--medium-5 {
+				width: 40%;
 			}
-			.row .column--large-6 {
-				width: 50%;
-			}
-			.row .column--large-7 {
-				width: 58.33%;
-			}
-			.row .column--large-8 {
+			.row .column--medium-8 {
 				width: 66.66%;
 			}
-			.row .column--large-9 {
-				width: 74.99%;
+			.row .column--medium-6 {
+				width: 50%;
 			}
-			.row .column--large-12 {
+			.row .column--medium-7 {
+				width: 60%;
+				padding-left: 70px;
+				padding-right: 20px;
+			}
+			.row .column--medium-12 {
 				width: 100%;
+			}		 
+	}
+
+@media (min-width: 1171px) {	
+			.row .column--medium-5 {
+				width: 40%;
+				padding-left: 50px;
+				padding-right: 20px;
 			}		 
 	}
 

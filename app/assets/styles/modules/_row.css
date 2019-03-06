@@ -1,8 +1,14 @@
 .row {
+
 	@mixin clearfix;
+
 	.column {
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 100%;
+
 		&--center {
-			margin: 0 auto;
+			padding: 0 auto;
 		}
 		&--right {
 			float: right;
@@ -10,31 +16,34 @@
 		&--left {
 			float: left;
 		}
-		@mixin atLarge {
-			&--large-3 {
-				width: 25%;
-			}
-			&--large-4 {
+		@mixin atMedium {
+			&--medium-4 {
 				width: 33.33%;
 			}
-			&--large-5 {
-				width: 41.66%;
+			&--medium-5 {
+				width: 40%;
 			}
-			&--large-6 {
-				width: 50%;
-			}
-			&--large-7 {
-				width: 58.33%;
-			}
-			&--large-8 {
+			&--medium-8 {
 				width: 66.66%;
 			}
-			&--large-9 {
-				width: 74.99%;
+			&--medium-6 {
+				width: 50%;
 			}
-			&--large-12 {
+			&--medium-7 {
+				width: 60%;
+				padding-left: 70px;
+				padding-right: 20px;
+			}
+			&--medium-12 {
 				width: 100%;
 			}		
 		}
+		@mixin atLarge {	
+			&--medium-5 {
+				width: 40%;
+				padding-left: 50px;
+				padding-right: 20px;
+			}
+		}		
 	}
 }
