@@ -1,7 +1,7 @@
 .header {
 	position: relative;
 	font-family: 'Caveat Brush', cursive;
-	background-color: $baseColor;
+	background-color: $baseColor-1;
 	height: $menuHeight;
 	padding: 25px 20px 0 20px;
 /*flexbox*/
@@ -148,7 +148,7 @@
 	}
 	&__part--nav__menu__item__subtitle:hover {
 		@mixin atMedium {
-		color: $baseColor;
+		color: $baseColor-1;
 		}
 	}
 

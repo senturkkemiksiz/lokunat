@@ -25,8 +25,11 @@
 	&--66p {
 		max-width: 66% 
 	}
-	&--400 {
+	&--400-until-medium {
 		max-width: 400px;
+		@mixin atMedium {
+			max-width: 100%;
+		}
 	}
 
 }

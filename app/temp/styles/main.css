@@ -741,30 +741,68 @@ h1, h2 {
 		max-width: 66% 
 	}
 
-.wrapper--400 {
+.wrapper--400-until-medium {
 		max-width: 400px;
+	}
+
+@media (min-width: 981px) {
+
+.wrapper--400-until-medium {
+			max-width: 100%
+	}		 
 	}
 
 .margin-box {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	margin-left: 20px;
-	margin-right: 20px;	
+	margin-right: 20px;
+
 }
+
+.margin-box--no-ends {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+.margin-box--no-top {
+		margin-top: 0;
+	}
+
+.margin-box--half-bottom {
+		margin-bottom: 10px;
+	}
+
+@media (min-width: 981px) {
+
+.margin-box--40-bottom-at-medium {
+			margin-bottom: 40px
+	}		 
+	}
+
+.margin-box--no-sides {
+		margin-left: 0;
+		margin-right: 0;
+	}
 
 @media (min-width: 1171px) {
 
-.margin-box--alt-1 {
+.margin-box--50-left-at-large {
 			margin-left: 50px
 	}		 
 	}
 
 @media (min-width: 981px) {
 
-.margin-box--alt-2 {
+.margin-box--50-pushed-at-medium {
 			margin-left: 50px;
 			margin-right: -50px
 	}		 
+	}
+
+.margin-box--70-left-no-right {
+		margin-left: 70px;
+		margin-right: 0;
 	}
 
 .curly-button {
@@ -809,7 +847,18 @@ h1, h2 {
 
 .heading {
 	font-family: 'Caveat Brush', cursive;
+	font-weight: 300;
+	line-height: 2.6rem;
+	font-size: 2.7rem;
 }
+
+@media (min-width: 1171px) {
+
+.heading {
+		line-height: 3.8rem;
+		font-size: 4rem
+}		 
+	}
 
 .heading__brown {
 		color:#572d14;
@@ -824,11 +873,25 @@ h1, h2 {
 	}
 
 .heading--size-2 {
+		font-size: 2.1rem;
+	}
 
+@media (min-width: 1171px) {
+
+.heading--size-2 {
+			font-size: 2.7rem
+	}		 
 	}
 
 .heading--size-3 {
-		
+		font-size: 1.631rem;
+	}
+
+@media (min-width: 1171px) {
+
+.heading--size-3 {
+			font-size: 2.175rem
+	}		 
 	}
 
 .row::after {
@@ -877,6 +940,17 @@ h1, h2 {
 
 .content-container--center {
 		text-align: center;	
+	}
+
+.content-container p {
+		font-size: 1.125rem;
+	}
+
+@media (min-width: 1171px) {
+
+.content-container p {
+			font-size: 1.3125rem
+	}		 
 	}
 
 .intro-show {

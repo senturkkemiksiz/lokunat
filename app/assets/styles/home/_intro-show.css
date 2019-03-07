@@ -8,7 +8,7 @@
 	max-height: 100vw;
 	margin-top: -$menuHeight;
 	padding-top: $menuHeight;	
-	background-color: $baseColor;
+	background-color: $baseColor-1;
 
 	&__adjustment-box {	
 		position: relative;
