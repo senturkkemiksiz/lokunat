@@ -20,6 +20,9 @@ a {
 
 img {
 	max-width: 100%;
+	&.image--block {
+		display: block;
+	}
 	&.image--center {
 		display: block;
 		margin: 0 auto;

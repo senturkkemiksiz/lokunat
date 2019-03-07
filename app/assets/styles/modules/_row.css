@@ -3,8 +3,6 @@
 	@mixin clearfix;
 
 	.column {
-		padding-left: 20px;
-		padding-right: 20px;
 		width: 100%;
 
 		&--center {
@@ -23,27 +21,20 @@
 			&--medium-5 {
 				width: 40%;
 			}
-			&--medium-8 {
-				width: 66.66%;
-			}
 			&--medium-6 {
 				width: 50%;
 			}
 			&--medium-7 {
 				width: 60%;
+				/*
 				padding-left: 70px;
 				padding-right: 20px;
+				*/
 			}
 			&--medium-12 {
 				width: 100%;
 			}		
-		}
-		@mixin atLarge {	
-			&--medium-5 {
-				width: 40%;
-				padding-left: 50px;
-				padding-right: 20px;
-			}
 		}		
 	}
+
 }

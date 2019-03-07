@@ -1,0 +1,17 @@
+.margin-box {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	&--alt-1 {
+		@mixin atLarge {
+			margin-left: 50px;
+		}
+	}
+	&--alt-2 {
+		@mixin atMedium {
+			margin-left: 50px;
+			margin-right: -50px;
+		}
+	}	
+}
