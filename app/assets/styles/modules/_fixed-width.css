@@ -1,0 +1,19 @@
+.fixed-width {
+	margin-left: auto;
+	margin-right: auto;
+	
+	&--1100 {
+		max-width: 1100px;
+	}
+	&--66p-at-medium {
+		@mixin atMedium {
+			width: 66%;
+		} 
+	}
+	&--400-until-medium {
+		max-width: 400px;
+		@mixin atMedium {
+			max-width: 100%;
+		}
+	}
+}

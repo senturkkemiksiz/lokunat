@@ -4,14 +4,15 @@
 @import "base/_mixins";
 @import "base/_global";
 
-@import "modules/_header";
+@import "modules/_header-bar";
 @import "modules/_wrapper";
+@import "modules/_fixed-width";
 @import "modules/_margin-box";
 @import "modules/_curly-button";
 @import "modules/_menu-down-arrow";
 @import "modules/_headings";
 @import "modules/_row";
-@import "modules/content-container";
+@import "modules/_content-container";
 
 @import "home/_intro-show";
 @import "home/_sections.css";

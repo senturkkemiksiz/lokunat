@@ -1,8 +1,10 @@
 .margin-box {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin: 20px;
+	&::before, &::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
 
 
 	&--no-ends {
@@ -11,9 +13,6 @@
 	}	
 	&--no-top {
 		margin-top: 0;
-	}	
-	&--half-bottom {
-		margin-bottom: 10px;
 	}	
 	&--40-bottom-at-medium {
 		@mixin atMedium {

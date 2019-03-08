@@ -1,19 +1,15 @@
 .section {
 	&--home {
-		&--1 {
-			padding-top: 20px;
-			padding-bottom: 20px;
+		&--1 {			
 			background-color: $baseColor-2;
 		}
 		&--2 {
-			padding-top: 40px;
 			background-color: $baseColor-2;
 		}
 		&--3 {
 			background-color: $baseColor-2;
 		}
 		&--4 {
-			padding-top: 20px;
 		}
 	}		
 }
