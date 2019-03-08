@@ -1,10 +1,10 @@
 header {
+	position: relative;
 	background-color: $baseColor-1;	
 	font-family: 'Caveat Brush', cursive;
 }
 
 .header-bar {
-	position: relative;
 	height: $menuHeight;
 /*flexbox*/
 	display: flex;
