@@ -1,36 +1,19 @@
 .section {
 	&--home {
-	
 		&--1 {
-			
-			&__part {
-				margin-left: 20px;
-				margin-right: 20px;
-				&--1 {
-					@mixin atMedium {
-						width: 66%;
-					}
-				}
-				&--2 {}
-			}
+			padding-top: 20px;
+			padding-bottom: 20px;
+			background-color: $baseColor-2;
 		}
 		&--2 {
-			
-			&__part {
-				margin-left: 20px;
-				margin-right: 20px;
-				&--1 {}
-				&--2 {}
-			}
-		}	
+			padding-top: 40px;
+			background-color: $baseColor-2;
+		}
 		&--3 {
-			
-			&__part {
-				margin-left: 20px;
-				margin-right: 20px;
-				&--1 {}
-				&--2 {}
-			}
-		}	
+			background-color: $baseColor-2;
+		}
+		&--4 {
+			padding-top: 20px;
+		}
 	}		
 }

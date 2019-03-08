@@ -1,13 +1,32 @@
 .content-container {
-
-	&--center {
-		text-align: center;	
-	}
+	text-align: center;
 	
 	p {
+		margin-bottom: 10px;
 		font-size: 1.125rem;
+		font-weight: 400;
 		@mixin atLarge {
 			font-size: 1.3125rem;
+		}
+	}
+	a {
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	strong {
+		font-weight: 500;
+	}
+
+
+
+	&--medium-left {
+		@mixin atMedium {
+			text-align: left;
+		}
+	}
+	&--large-left {
+		@mixin atLarge {
+			text-align: left;
 		}
 	}
 
