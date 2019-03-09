@@ -387,14 +387,13 @@ h1, h2 {
 	padding: 0;
 }
 
-header {
-	background-color: #ecd1b4;	
-	font-family: 'Caveat Brush', cursive;
-}
-
 .header-bar {
 	position: relative;
-	height: 62px;
+	z-index: 20;
+	background-color: #ecd1b4;	
+	font-family: 'Caveat Brush', cursive;
+	height: 87px;
+	padding-top: 25px;
 /*flexbox*/
 	display: flex;
 	flex-wrap: wrap;
@@ -406,8 +405,20 @@ header {
 
 /*----*/
 
+@media (min-width: 981px) {
+
+.header-bar {
+		padding-left: 20px;
+		padding-right: 20px
+
+  	
+
+}		 
+	}
+
 .header-bar__logo {	
 		//background-color: green;
+		padding-left: 20px;
 /*flexbox*/
 		flex: 0 0 inherit;
 /*----*/
@@ -426,8 +437,7 @@ header {
 
 @media (min-width: 981px) {
 
-.header-bar__logo {
-			//width: 10%;	
+.header-bar__logo {	
 			width: 13%
 	}		 
 	}
@@ -435,8 +445,6 @@ header {
 .header-bar__logo img {
 			width: 100%;
 			max-width: 140px;	
-			margin-left: 20px;
-			margin-right: 20px;
 		}
 
 .header-bar__part {
@@ -461,8 +469,7 @@ header {
 		position: fixed;
 		overflow-y: scroll;
 		background-color: #572d14;
-		padding: 20vh 0 0 0;	
-		z-index: 20;
+		padding: 20vh 0 0 0;
 		top: 0;
 		left: 0;
 		right: 0;
@@ -480,7 +487,7 @@ header {
 			position: static;
 			overflow-y: visible;			
 			background-color: transparent;
-			padding: 0 0 0 20px;
+			padding: 0 0 0 30px;
 			//background-color: blue			
 	}		 
 	}
@@ -561,7 +568,6 @@ header {
 
 .header-bar__part--nav__menu__item__dropdown {
 		display: none;
-		z-index: 30;
 	}
 
 @media (min-width: 981px) {
@@ -749,10 +755,6 @@ header {
 
 .wrapper--40-top {
 		padding-top: 40px;
-	}
-
-.wrapper--25-top {
-		padding-top: 25px;
 	}
 
 .fixed-width {
@@ -1032,8 +1034,8 @@ header {
 	overflow: hidden;
 	height: 100vh;
 	max-height: 100vw;
-	margin-top: -62px;
-	padding-top: 62px;	
+	margin-top: -87px;
+	padding-top: 87px;	
 	background-color: #ecd1b4;
 
 
@@ -1042,7 +1044,7 @@ header {
 .intro-show__adjustment-box {	
 		position: relative;
 /*flexbox*/	
-		flex-basis:62px;
+		flex-basis:87px;
 		flex:1;
 /*-----*/
 /*no-flexbox*/		

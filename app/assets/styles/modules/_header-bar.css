@@ -1,20 +1,24 @@
-header {
+.header-bar {
 	position: relative;
+	z-index: 20;
 	background-color: $baseColor-1;	
 	font-family: 'Caveat Brush', cursive;
-}
-
-.header-bar {
 	height: $menuHeight;
+	padding-top: 25px;
 /*flexbox*/
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;	
 /*----*/
+	@mixin atMedium {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 
 
 	&__logo {	
 		//background-color: green;
+		padding-left: 20px;
 /*flexbox*/
 		flex: 0 0 inherit;	
 		@mixin atMedium {
@@ -24,15 +28,12 @@ header {
 /*no-flebox*/
 		//float: left;
 /*----*/
-		@mixin atMedium {
-			//width: 10%;	
+		@mixin atMedium {	
 			width: 13%;		
 		}
 		img {
 			width: 100%;
 			max-width: 140px;	
-			margin-left: 20px;
-			margin-right: 20px;
 		}
 	}
 
@@ -58,8 +59,7 @@ header {
 		position: fixed;
 		overflow-y: scroll;
 		background-color: $mainBrown;
-		padding: 20vh 0 0 0;	
-		z-index: 20;
+		padding: 20vh 0 0 0;
 		top: 0;
 		left: 0;
 		right: 0;
@@ -72,7 +72,7 @@ header {
 			position: static;
 			overflow-y: visible;			
 			background-color: transparent;
-			padding: 0 0 0 20px;
+			padding: 0 0 0 30px;
 			//background-color: blue;
 		}			
 	}
@@ -127,7 +127,6 @@ header {
 	}
 	&__part--nav__menu__item__dropdown {
 		display: none;
-		z-index: 30;
 	}	
 	&__part--nav__menu__item:hover &__part--nav__menu__item__dropdown {
 		@mixin atMedium {
