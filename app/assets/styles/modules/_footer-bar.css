@@ -1,14 +1,40 @@
 .footer-bar {
 	&__connect {
 		background-color: $baseColor-1;
-		&__social-links {
-			display: inline-block;
-			li {
-				display: inline-block;
+
+		&__image-box {
+			background-color: red;
+			position: relative;
+			height: 30px;
+			img {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
 			}
 		}
-		&__hashtag {
-			display: inline-block;
+		&__subscriber {
+			background-color: gray;
+			&__input {
+				display: block;
+				width: 100%;
+				height: auto;
+				border-radius: 4px;
+			    font-size: 1rem;
+			    line-height: 1;
+			    padding-top: 10px;
+			    padding-right: 20px;
+			    padding-bottom: 10px;
+			    padding-left: 20px;
+			    background-color: #fbf0e6;
+   				border: 1px solid #f6d9bd;
+			}
+		}
+		&__social-media {
+			background-color: green;
+			&__item {
+				display: inline-block;
+				height: 1em;
+			}
 		}
 	}
 
