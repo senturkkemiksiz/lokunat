@@ -1,0 +1,28 @@
+.footer-bar {
+	&__connect {
+		background-color: $baseColor-1;
+		&__social-links {
+			display: inline-block;
+			li {
+				display: inline-block;
+			}
+		}
+		&__hashtag {
+			display: inline-block;
+		}
+	}
+
+	&__logo {
+		background-color: $mainBrown;
+		img {
+			max-width: 200px;
+		}
+	}
+	&__note {
+		text-align: center;
+		color: #fff;
+		font-size: .7rem;
+		background-color: $mainBrown;
+		border-top: 1px solid $lightBrown;
+	}	
+}

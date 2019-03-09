@@ -4,7 +4,6 @@
 @import "base/_mixins";
 @import "base/_global";
 
-@import "modules/_header-bar";
 @import "modules/_wrapper";
 @import "modules/_fixed-width";
 @import "modules/_margin-box";
@@ -13,6 +12,8 @@
 @import "modules/_headings";
 @import "modules/_row";
 @import "modules/_content-container";
+@import "modules/_header-bar";
+@import "modules/_footer-bar";
 
 @import "home/_intro-show";
 @import "home/_sections.css";

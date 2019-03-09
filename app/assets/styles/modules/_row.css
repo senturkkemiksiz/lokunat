@@ -15,21 +15,23 @@
 			float: left;
 		}
 		@mixin atMedium {
+			&--medium-1 {
+				width: 8.33%;
+			}
 			&--medium-4 {
 				width: 33.33%;
 			}
-			&--medium-5 {
+			&--medium-40p {
 				width: 40%;
 			}
 			&--medium-6 {
 				width: 50%;
 			}
-			&--medium-7 {
+			&--medium-60p {
 				width: 60%;
-				/*
-				padding-left: 70px;
-				padding-right: 20px;
-				*/
+			}
+			&--medium-8 {
+				width: 66.66%;
 			}
 			&--medium-12 {
 				width: 100%;
