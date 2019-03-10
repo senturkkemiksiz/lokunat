@@ -4,7 +4,6 @@
 
 		&__image-box {
 			display: none;
-			//background-color: red;
 			position: relative;
 			height: 30px;
 			@mixin atLarge {
@@ -17,7 +16,6 @@
 			}
 		}
 		&__subscriber {
-			//background-color: gray;
 			margin: 8px 20px 20px 20px;
 			@mixin atMedium {
 				margin-bottom: 0;
@@ -44,7 +42,6 @@
 			}
 		}
 		&__social-media {
-			//background-color: green;
 			margin-bottom: 20px;
 			@mixin atMedium {
 				margin-top: 8px;

@@ -17,7 +17,6 @@
 
 
 	&__logo {	
-		//background-color: green;
 		padding-left: 20px;
 /*flexbox*/
 		flex: 0 0 inherit;	
@@ -73,11 +72,9 @@
 			overflow-y: visible;			
 			background-color: transparent;
 			padding: 0 0 0 30px;
-			//background-color: blue;
 		}			
 	}
 	&__part--nav__menu__item {
-		//background-color: blue;
 		display: block;
 		font-size: 1.9rem;
 		width: 85%;
@@ -93,7 +90,6 @@
 			font-weight: 500;	
 			margin: 0px;
 			padding: 10px;
-			//background-color: green;	
 			&--mobile {
 				display: none;
 			}			
@@ -105,13 +101,11 @@
 		color: #fff;
 		@mixin atMedium {
 			display: inline-block;
-			float: none;
-			//background-color: green;			
+			float: none;		
 			color: $mainBrown;				
 		}
 	}			
 	&__part--nav__menu__item .menu-down-arrow{
-		//background-color: white;
 		display: block;
 		float: right;
 		@mixin atMedium {
@@ -157,7 +151,6 @@
 	
 
 	&__part--social-links {
-		//background-color: yellow;
 		width: 14.27%;
 		text-align: right;
 		display: none;
@@ -172,7 +165,6 @@
 
 
 	&__part--shopping-links {
-		//background-color: red;
 		display: none;
 		width: 24.06%;
 		@mixin atMedium {
@@ -190,8 +182,7 @@
 	&__menu-icon {
 		display: block;
 		position: absolute;
-		z-index: 40;
-		//background-color: #fff;		
+		z-index: 40;	
 		@mixin atMedium {
 			display: none;
 		}

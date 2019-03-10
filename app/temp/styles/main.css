@@ -524,7 +524,7 @@ h1, h2 {
 	color: #fff;
 	font-size: 1.45rem;
 	padding: 7px 20px;
-	background-image: url("/assets/images/button-bg.svg");
+	background-image: url("/assets/images/icons/button-bg.svg");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
@@ -765,7 +765,6 @@ h1, h2 {
 	}
 
 .header-bar__logo {	
-		//background-color: green;
 		padding-left: 20px;
 /*flexbox*/
 		flex: 0 0 inherit;
@@ -835,13 +834,11 @@ h1, h2 {
 			position: static;
 			overflow-y: visible;			
 			background-color: transparent;
-			padding: 0 0 0 30px;
-			//background-color: blue			
+			padding: 0 0 0 30px			
 	}		 
 	}
 
 .header-bar__part--nav__menu__item {
-		//background-color: blue;
 		display: block;
 		font-size: 1.9rem;
 		width: 85%;
@@ -865,9 +862,8 @@ h1, h2 {
 			font-size: 1.45rem;
 			font-weight: 500;	
 			margin: 0px;
-			padding: 10px;
-			//background-color: green		
-	}	
+			padding: 10px		
+	}
 			.header-bar__part--nav__menu__item--mobile {
 				display: none;
 			}		 
@@ -883,14 +879,12 @@ h1, h2 {
 
 .header-bar__part--nav__menu__item__title {
 			display: inline-block;
-			float: none;
-			//background-color: green;			
+			float: none;		
 			color: #572d14
 	}		 
 	}
 
 .header-bar__part--nav__menu__item .menu-down-arrow{
-		//background-color: white;
 		display: block;
 		float: right;
 	}
@@ -953,7 +947,6 @@ h1, h2 {
 	}
 
 .header-bar__part--social-links {
-		//background-color: yellow;
 		width: 14.27%;
 		text-align: right;
 		display: none;	
@@ -972,7 +965,6 @@ h1, h2 {
 		}
 
 .header-bar__part--shopping-links {
-		//background-color: red;
 		display: none;
 		width: 24.06%;
 	}
@@ -996,7 +988,6 @@ h1, h2 {
 		display: block;
 		position: absolute;
 		z-index: 40;
-		//background-color: #fff;
 	}
 
 @media (min-width: 981px) {
@@ -1070,7 +1061,6 @@ h1, h2 {
 
 .footer-bar__connect__image-box {
 			display: none;
-			//background-color: red;
 			position: relative;
 			height: 30px;
 		}
@@ -1089,7 +1079,6 @@ h1, h2 {
 			}
 
 .footer-bar__connect__subscriber {
-			//background-color: gray;
 			margin: 8px 20px 20px 20px;
 		}
 
@@ -1127,7 +1116,6 @@ h1, h2 {
 			}
 
 .footer-bar__connect__social-media {
-			//background-color: green;
 			margin-bottom: 20px;
 		}
 
