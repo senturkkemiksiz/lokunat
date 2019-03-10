@@ -18,17 +18,8 @@
 			&--medium-1 {
 				width: 8.33%;
 			}
-			&--medium-15p {
-				width: 15%;
-			}
-			&--medium-32p {
-				width: 32%;
-			}
 			&--medium-4 {
 				width: 33.33%;
-			}
-			&--medium-38p {
-				width: 38%;
 			}
 			&--medium-40p {
 				width: 40%;
@@ -45,6 +36,17 @@
 			&--medium-12 {
 				width: 100%;
 			}		
+		}
+		@mixin atLarge {
+			&--large-15p {
+				width: 15%;
+			}
+			&--large-32p {
+				width: 32%;
+			}
+			&--large-38p {
+				width: 38%;
+			}			
 		}		
 	}
 

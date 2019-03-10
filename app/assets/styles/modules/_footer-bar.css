@@ -3,9 +3,13 @@
 		background-color: $baseColor-1;
 
 		&__image-box {
-			background-color: red;
+			display: none;
+			//background-color: red;
 			position: relative;
 			height: 30px;
+			@mixin atLarge {
+				display: block;
+			}
 			img {
 				position: absolute;
 				bottom: 0;
@@ -13,13 +17,23 @@
 			}
 		}
 		&__subscriber {
-			background-color: gray;
+			//background-color: gray;
+			margin: 8px 20px 20px 20px;
+			@mixin atMedium {
+				margin-bottom: 0;
+			}
+			&__input-box {
+				margin-bottom: 15px;
+				@mixin atMedium {			
+					padding-right: 10px;
+				}
+			}
 			&__input {
 				display: block;
 				width: 100%;
-				height: auto;
+				height: 40px;
 				border-radius: 4px;
-			    font-size: 1rem;
+			    font-size: .8rem;
 			    line-height: 1;
 			    padding-top: 10px;
 			    padding-right: 20px;
@@ -30,7 +44,12 @@
 			}
 		}
 		&__social-media {
-			background-color: green;
+			//background-color: green;
+			margin-bottom: 20px;
+			@mixin atMedium {
+				margin-top: 8px;
+				margin-bottom: 20px;
+			}
 			&__item {
 				display: inline-block;
 				height: 1em;

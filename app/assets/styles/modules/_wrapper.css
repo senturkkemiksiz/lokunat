@@ -21,6 +21,11 @@
 	}
 	&--no-bottom {
 		padding-bottom: 0;
+	}	
+	&--no-bottom-at-medium {
+		@mixin atMedium {
+			padding-bottom: 0;
+		}
 	}
 	&--no-ends {
 		padding-top: 0;

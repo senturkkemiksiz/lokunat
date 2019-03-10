@@ -3,8 +3,16 @@
 	display: inline-block;
 	color: #fff;
 	font-size: 1.45rem;
-	padding: 8px 20px;
+	padding: 7px 20px;
 	background-image: url("/assets/images/button-bg.svg");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+
+	&--full-width-until-medium {
+		width: 100%;
+		text-align: center;
+		@mixin atMedium {
+			width: auto;
+		}
+	}
 }
