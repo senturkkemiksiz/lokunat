@@ -1,4 +1,5 @@
 .header-bar {
+	@mixin clearfix;
 	position: relative;
 	z-index: 20;
 	background-color: $baseColor-1;	
@@ -6,9 +7,9 @@
 	height: $menuHeight;
 	padding-top: 25px;
 /*flexbox*/
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;	
+	//display: flex;
+	//flex-wrap: wrap;
+	//flex-direction: row;	
 /*----*/
 	@mixin atMedium {
 		padding-left: 20px;
@@ -19,13 +20,13 @@
 	&__logo {	
 		padding-left: 20px;
 /*flexbox*/
-		flex: 0 0 inherit;	
+		//flex: 0 0 inherit;	
 		@mixin atMedium {
-			flex: 1 1 auto;			
+			//flex: 1 1 auto;			
 		}
 /*----*/
 /*no-flebox*/
-		//float: left;
+		float: left;
 /*----*/
 		@mixin atMedium {	
 			width: 13%;		
@@ -39,19 +40,21 @@
 
   	&__part {
 /*flexbox*/  		
-  		flex: 1 1 auto;
+  		//flex: 1 1 auto;
 /*----*/
 /*no-flebox*/
-  		//float: left;
+		float: left; 
 /*----*/
 	}
 
 
 	&__part--nav {
 		@mixin atMedium {
-			//width: 51.67%;
-			width: 48.67%;
+			width: 62%
 		}	
+		@mixin atLarge {			
+			width: 49%;
+		}
 	}
 	&__part--nav__menu { 
 		display: none;		
@@ -137,6 +140,7 @@
 		font-size: 0.8em;
 		display: block;
 		color: #fff;
+		transition: color .2s ease-in-out;
 		@mixin atMedium {
 			font-size: 0.87em;
 			padding: 10px 18px;				
@@ -151,7 +155,7 @@
 	
 
 	&__part--social-links {
-		width: 14.27%;
+		width: 14%;
 		text-align: right;
 		display: none;
 		@mixin atLarge {
@@ -166,9 +170,12 @@
 
 	&__part--shopping-links {
 		display: none;
-		width: 24.06%;
+		width: 25%;
 		@mixin atMedium {
 			display: block;
+		}
+		@mixin atLarge {			
+			width: 24%;
 		}
 		li {
 			float: left;

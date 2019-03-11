@@ -1,23 +1,26 @@
 .intro-show {
+	position: relative;
+	top: -$menuHeight;
+	margin-bottom: -$menuHeight;
+	padding-top: $menuHeight;	
+	height: 100vh;
+	max-height: 100vw;
+	overflow: hidden;
+	background-color: $baseColor-1;
+
 /*flexbox*/	
 	display: flex;	
   	flex-direction: column;
  /*-----*/
-	overflow: hidden;
-	height: 100vh;
-	max-height: 100vw;
-	margin-top: -$menuHeight;
-	padding-top: $menuHeight;	
-	background-color: $baseColor-1;
 
 	&__adjustment-box {	
 		position: relative;
 /*flexbox*/	
-		flex-basis:$menuHeight;
-		flex:1;
+		/*flex-basis:$menuHeight;*/
+		//flex:1;
 /*-----*/
 /*no-flexbox*/		
-		//height: 100%;
+		height: 100%;
 /*-----*/	
 	}
 

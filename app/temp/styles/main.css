@@ -743,13 +743,19 @@ h1, h2 {
 	height: 87px;
 	padding-top: 25px;
 /*flexbox*/
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
+	//display: flex;
+	//flex-wrap: wrap;
+	//flex-direction: row;
 
   	
 
 }
+
+.header-bar::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
 
 /*----*/
 
@@ -767,16 +773,16 @@ h1, h2 {
 .header-bar__logo {	
 		padding-left: 20px;
 /*flexbox*/
-		flex: 0 0 inherit;
+		//flex: 0 0 inherit;
 /*----*/
 /*no-flebox*/
-		//float: left;
+		float: left;
 	}
 
 @media (min-width: 981px) {
 
 .header-bar__logo {
-			flex: 1 1 auto
+			//flex: 1 1 auto
 	}		 
 	}
 
@@ -796,18 +802,24 @@ h1, h2 {
 
 .header-bar__part {
 /*flexbox*/  		
-  		flex: 1 1 auto;
+  		//flex: 1 1 auto;
 /*----*/
 /*no-flebox*/
-  		//float: left;
+		float: left; 
 /*----*/
 	}
 
 @media (min-width: 981px) {
 
 .header-bar__part--nav {
-			//width: 51.67%;
-			width: 48.67%	
+			width: 62%
+	}		 
+	}
+
+@media (min-width: 1171px) {
+
+.header-bar__part--nav {			
+			width: 49%
 	}		 
 	}
 
@@ -929,6 +941,7 @@ h1, h2 {
 		font-size: 0.8em;
 		display: block;
 		color: #fff;
+		transition: color .2s ease-in-out;
 	}
 
 @media (min-width: 981px) {
@@ -947,7 +960,7 @@ h1, h2 {
 	}
 
 .header-bar__part--social-links {
-		width: 14.27%;
+		width: 14%;
 		text-align: right;
 		display: none;	
 	}
@@ -966,13 +979,20 @@ h1, h2 {
 
 .header-bar__part--shopping-links {
 		display: none;
-		width: 24.06%;
+		width: 25%;
 	}
 
 @media (min-width: 981px) {
 
 .header-bar__part--shopping-links {
 			display: block
+	}		 
+	}
+
+@media (min-width: 1171px) {
+
+.header-bar__part--shopping-links {			
+			width: 24%
 	}		 
 	}
 
@@ -1149,28 +1169,32 @@ h1, h2 {
 	}
 
 .intro-show {
+	position: relative;
+	top: -87px;
+	margin-bottom: -87px;
+	padding-top: 87px;	
+	height: 100vh;
+	max-height: 100vw;
+	overflow: hidden;
+	background-color: #ecd1b4;
+
 /*flexbox*/	
 	display: flex;	
   	flex-direction: column;
- /*-----*/
-	overflow: hidden;
-	height: 100vh;
-	max-height: 100vw;
-	margin-top: -87px;
-	padding-top: 87px;	
-	background-color: #ecd1b4;
 
 
 }
 
+/*-----*/
+
 .intro-show__adjustment-box {	
 		position: relative;
 /*flexbox*/	
-		flex-basis:87px;
-		flex:1;
+		/*flex-basis:$menuHeight;*/
+		//flex:1;
 /*-----*/
 /*no-flexbox*/		
-		//height: 100%;
+		height: 100%;
 /*-----*/	
 	}
 
